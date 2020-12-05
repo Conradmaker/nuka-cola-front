@@ -1,0 +1,108 @@
+body {
+  height: 100vh;
+}
+main {
+  padding-top: 60px;
+  height: 100%;
+}
+main .inner {
+  display: flex;
+  height: 100%;
+}
+main .inner .section__login {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main .inner .section__banner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.section__banner .img__wrapper {
+  width: 100%;
+  max-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6374e8;
+}
+.section__banner img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.section__banner .login__nav {
+  flex: 1;
+  background: #6374e8;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.login__nav li {
+  box-sizing: border-box;
+  width: 150px;
+  height: 130px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.login__nav li + li {
+  border-left: 1px solid #e5e5e5;
+}
+.login__nav li:hover {
+  background: #eaecff;
+}
+.login__nav li span {
+  font-size: 13px;
+}
+.login__nav li b {
+  font-size: 20px;
+  font-weight: bold;
+}
+.section__login h1 {
+  font-size: 40px;
+  line-height: 1.4;
+}
+.section__login h1 strong {
+  font-weight: bold;
+}
+.section__login .login__title {
+  width: 70%;
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+}
+.login__title h2 {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.section__login small {
+  width: 45%;
+  text-align: end;
+  display: inline-block;
+  font-size: 12px;
+  padding: 10px 0;
+  color: #777;
+  cursor: pointer;
+}
+.section__login small:hover {
+  color: #000;
+}
+.login__btn__wrapper {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.login__btn__wrapper .btn {
+  width: 47%;
+  height: 36px;
+  margin-top: 20px;
+}
