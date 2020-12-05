@@ -28,13 +28,11 @@
   color: #30409f;
 }
 .input__box {
-  max-width: 250px;
+  max-width: 70%;
   height: 60px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-.input__box + small {
 }
 
 .input__box + .input__box {
@@ -53,7 +51,7 @@
 }
 .input__box input:focus {
   padding: 10px 0;
-  width: 120%;
+  width: 90%;
   font-size: 17px;
   border-bottom: 2px solid #000;
 }
