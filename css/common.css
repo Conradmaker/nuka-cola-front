@@ -115,6 +115,7 @@ header .left__header {
 }
 .left__header .logo {
   width: 150px;
+  cursor: pointer;
 }
 .left__header .logo img {
   width: 100%;
@@ -127,6 +128,10 @@ header .left__header {
   gap: 30px;
 }
 .header__nav li {
+  cursor: pointer;
+}
+.header__nav li:hover {
+  font-weight: bold;
 }
 header .right__header {
   display: flex;

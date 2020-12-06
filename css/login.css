@@ -102,7 +102,7 @@ main .inner .section__banner {
 .section__login .forgot-email:hover {
   color: #000;
 }
-.signup-check {
+#alert_check_pwd {
   display: none;
   color: red;
 }
