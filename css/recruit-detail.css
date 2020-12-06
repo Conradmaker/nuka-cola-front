@@ -57,7 +57,7 @@
 .recruit__all__wrapper .inner {
   display: flex;
   flex-direction: column;
-  border-top: 2px solid #707070;
+  border-top: 2px solid #c7c7c7;
   padding-top: 30px;
   width: 100%;
 }
