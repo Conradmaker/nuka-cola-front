@@ -17,7 +17,10 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -49,72 +52,164 @@
 
     <main class="content__section">
       <div class="inner">
-        <div class="section__title">
+        <div class="inner__title">
           <h1>채용등록</h1>
         </div>
+        <div class="section__recruit">
+          <div class="section__recruit__left">
+            <div class="content__wrap">
+              <div class="company__logo">
+                <img src="../../assets/avatar.png" alt="logo" />
+              </div>
+              <div class="logo__info">
+                <strong>이미지</strong>
+                <span>
+                  사무실이나 구성원 등 기업을 소개 할 수 있는 이미지를
+                  업로드해주세요.
+                </span>
+                <input type="file" />
+              </div>
+            </div>
 
-        <div class="main__main__section">
-          <div class="main__section__left">
-            <div class="section__left__top">
-                <div class="logo">
-                    <img src="../../assets/avatar.png" alt="">
-                </div>
-                <div class="logo__info">
-                    <strong>이미지</strong>
-                    <span>사무실이나 구성원 등 기업을 소개할 수 있는 이미지를 업로드 해주세요.</span>
-                    <input type="file">
-                </div>
+            <div class="content__job">
+              <strong>Job Title</strong>
+              <input
+                type="text"
+                placeholder="예시) 함께할 디자이너를 모셔요!"
+              />
             </div>
-            <div class="section__left__bottom">
-                <strong>Job Title</strong>
-                <input type="text" placeholder="예시) 함께할 디자이너를 모셔요!">
+
+            <div class="content__pro">
+              <strong>전문기술</strong>
+
+              <input type="text" />
+
+              <div class="pro__btn">
+                <button class="pro__btn-btn">Node.js</button>
+                <button class="pro__btn-btn">Express.js</button>
+                <button class="pro__btn-btn">Java</button>
+              </div>
             </div>
-        </div>
-        <div class="section__right__nav">
-          <div class="custom-control custom-switch">
-            <ul>
-              <li>
-                <input type="checkbox" class="custom-control-input">
-                <label class="custom-control-label">이미지</label>
-              </li>
-              <li>
-                <input type="checkbox" class="custom-control-input">
-                <label class="custom-control-label">Job Title</label>
-              </li>
-              <li>
-                <input type="checkbox" class="custom-control-input">
-                <label class="custom-control-label">전문기술</label>
-              </li>
-              <li>
-                <input type="checkbox" class="custom-control-input">
-                <label class="custom-control-label">채용 분야</label>
-              </li>
-              <li>
-                <input type="checkbox" class="custom-control-input">
-                <label class="custom-control-label">경력여부</label>
-              </li>
-              <li>
-                <input type="checkbox" class="custom-control-input">
-                <label class="custom-control-label">연봉</label>
-              </li>
-              <li>
-                <input type="checkbox" class="custom-control-input">
-                <label class="custom-control-label">채용상세</label>
-              </li>
-            </ul>
+
+            <div class="content__carrer">
+              <div class="content__carrer-right">
+                <strong>채용분야</strong>
+                <select name="" id="">
+                  <option value="">웹서비스</option>
+                  <option value="">IoT</option>
+                </select>
+              </div>
+              <div class="content__carrer-left">
+                <strong>경력여부</strong>
+                <div class="content__carrer-box">
+                  <input type="checkbox" name="" id="" />
+                  <label for="">신입</label>
+                  <input type="checkbox" name="" id="" />
+                  <label for="">경력</label>
+                </div>
+              </div>
+            </div>
+            <div class="content__salary">
+              <strong>연봉</strong>
+              <div class="content__salary-range">
+                <input type="range" name="" id="" />
+              </div>
+            </div>
+            <div class="content__recruitDetail">
+              <strong>채용상세</strong>
+              <div class="content__recruitDetail-box">
+                <p>
+                  담당 주요 업무 <br />
+                  - <br />
+                  - <br />
+                  자격 요건 <br />
+                  - <br />
+                  우대 사항 <br />
+                  - <br />
+                  - <br />
+                </p>
+              </div>
+            </div>
+
+            <div class="content__deadLine">
+              <strong>마감일</strong>
+              <input type="datetime" name="" id="" placeholder="2020-10-20" />
+            </div>
           </div>
+          <div class="section__recruit__right">
+            <div class="section__recruit__right-list">
+              <div class="custom-control custom-switch">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="switch1"
+                  name="example"
+                />
+                <label class="custom-control-label" for="switch1">이미지</label>
+              </div>
 
+              <div class="custom-control custom-switch">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="switch2"
+                  name="example"
+                />
+                <label class="custom-control-label" for="switch2"
+                  >Job title</label
+                >
+              </div>
+
+              <div class="custom-control custom-switch">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="switch3"
+                  name="example"
+                />
+                <label class="custom-control-label" for="switch3"
+                  >전문 기술</label
+                >
+              </div>
+
+              <div class="custom-control custom-switch">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="switch4"
+                  name="example"
+                />
+                <label class="custom-control-label" for="switch4"
+                  >경력여부</label
+                >
+              </div>
+              <div class="custom-control custom-switch">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="switch5"
+                  name="example"
+                />
+
+                <label class="custom-control-label" for="switch5">연봉</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="switch6"
+                  name="example"
+                />
+                <label class="custom-control-label" for="switch6"
+                  >채용 상세</label
+                >
+              </div>
+              <div class="section__recruit__right__btn">
+                <button type="submit">공고등록</button>
+              </div>
+            </div>
+          </div>
         </div>
-
-        
-        <div class="section__tech">
-          <strong>전문 기술</strong>
-          <input type="text">
-          <span class="badge badge-pill badge-primary">Node.js</span>
-          <span class="badge badge-pill badge-primary">Express.js</span>
-          <span class="badge badge-pill badge-primary">Java</span>
-        </div>
-
       </div>
     </main>
   </body>
