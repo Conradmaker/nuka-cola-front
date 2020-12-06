@@ -2,6 +2,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -128,6 +132,7 @@ header .right__header {
   display: flex;
   align-items: center;
   padding: 5px 10px;
+  cursor: pointer;
 }
 .right__header i {
 }
@@ -279,4 +284,120 @@ header .right__header {
   border: none;
   background-color: #fee500;
   box-shadow: 0 0 10px gray;
+}
+
+/* 메인메뉴 */
+@keyframes slideMenu {
+  0% {
+    transform: translateX(2000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideOffMenu {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(2000px);
+  }
+}
+.main__menu__container {
+  position: fixed;
+  padding-top: 100px;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #30409f;
+  z-index: 888;
+  color: #fff;
+  display: none;
+  animation: slideMenu 0.5s ease-in-out forwards;
+}
+.main__menu-active {
+  display: initial;
+}
+.main__menu__container .inner {
+  display: flex;
+  gap: 200px;
+}
+.main__menu__container .menu__left {
+  flex: 2;
+}
+.main__menu__container .menu__right {
+  flex: 1;
+}
+.menu__left .search__box {
+  position: relative;
+  height: 42px;
+}
+.menu__left .search__box input {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  height: 100%;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+  transition: all 0.2s;
+  padding: 0 15px;
+}
+.search__box input:focus {
+  border-bottom: 3px solid #fff;
+  background: #3b4fc0;
+}
+.menu__left .search__box i {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 30px;
+}
+
+.menu__nav {
+  flex: 1;
+  margin-top: 150px;
+}
+.menu__nav li + li {
+  margin-top: 25px;
+}
+.menu__nav a {
+  color: #fff;
+  font-size: 55px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.menu__nav a:hover {
+  text-decoration: underline;
+}
+
+.menu__right p {
+  text-align: end;
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+.menu__right p b {
+  font-size: 35px;
+  font-weight: bold;
+}
+.menu__right ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.menu__right ul li {
+  cursor: pointer;
+  font-size: 23px;
+  padding: 5px 0;
+}
+.menu__right ul li + li {
+  margin-top: 5px;
+}
+.menu__right ul li:hover {
+  text-decoration: underline;
 }

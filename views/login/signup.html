@@ -36,6 +36,58 @@
         </div>
       </div>
     </header>
+
+    <!-- 메인메뉴 -->
+    <div class="main__menu__container">
+      <div class="inner">
+        <div class="menu__left">
+          <div class="search__box">
+            <input type="text" placeholder="검색어를 입력해주세요" />
+            <i class="material-icons"> search </i>
+          </div>
+          <ul class="menu__nav">
+            <li><a href="#">TIME LINE</a></li>
+            <li><a href="#">PARTNERS</a></li>
+            <li><a href="#">COMPANIES</a></li>
+            <li><a href="#">EMPLOYMENT</a></li>
+          </ul>
+        </div>
+        <div class="menu__right">
+          <p>어서오세요 <b>가나다</b>님</p>
+          <ul>
+            <li>알림</li>
+            <li>메시지</li>
+            <li>PROFILE</li>
+            <li>LOGOUT</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".right__header").addEventListener("click", () => {
+        if (
+          document
+            .querySelector(".main__menu__container")
+            .classList.contains("main__menu-active")
+        ) {
+          document.querySelector(".main__menu__container").style.animation =
+            "slideOffMenu 0.5s ease-in-out forwards";
+          setTimeout(() => {
+            document
+              .querySelector(".main__menu__container")
+              .classList.toggle("main__menu-active");
+            document.querySelector(".main__menu__container").style.animation =
+              "slideMenu 0.5s ease-in-out forwards";
+          }, 300);
+        } else {
+          document
+            .querySelector(".main__menu__container")
+            .classList.toggle("main__menu-active");
+        }
+      });
+    </script>
+
+    <!-- 컨텐츠 -->
     <main>
       <div class="inner">
         <section class="section__login">
@@ -129,7 +181,7 @@
               <span>처음방문이신가요?</span>
               <b>SIGNUP</b>
             </li>
-            <li>
+            <li onClick='location.href="/views/timeline/index.html"'>
               <span>돌러보기</span>
               <b>MORE</b>
             </li>
