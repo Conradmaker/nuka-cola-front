@@ -1,56 +1,6 @@
-.inner {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-header .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-}
-
-header .left__header {
-  display: flex;
-  align-items: center;
-}
-
-.left__header .logo {
-  width: 150px;
-}
-
-.left__header .logo img {
-  width: 100%;
-}
-
-.left__header .header__nav {
-  margin-left: 30px;
-  padding-top: 10px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.header__nav li {
-}
-
-header .right__header {
-  display: flex;
-  align-items: center;
-  padding: 5px 10px;
-}
-
-.right__header i {
-}
-
-.right__header span {
-  padding-top: 3px;
-  font-size: 18px;
-}
-
 .content__section {
+  background: #ffffff;
 }
-
 .content__section .inner {
   height: 100%;
   display: flex;
@@ -133,7 +83,7 @@ header .right__header {
   flex-direction: column;
   justify-content: space-around;
   padding: 20px 20px;
-  padding-left: 5px;
+  padding-left: 10px;
   flex: 5;
 }
 
@@ -144,7 +94,6 @@ header .right__header {
 
 .section__left__bottom input {
   width: 50%;
-  padding-bottom: 20px;
 }
 
 .section__right__nav {
@@ -153,5 +102,13 @@ header .right__header {
   flex: 2;
 }
 
-.section__right__nav .right__nav {
+.custom-control custom-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__main__section .section__tech {
+  display: flex;
+  flex-direction: column;
 }
