@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARTNER</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/partner.css"/>
+</head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="left__header">
+          <div class="logo">
+            <img src="../../assets/logo.png" alt="logo" />
+          </div>
+          <ul class="header__nav">
+            <li class="header__nav-item">PARTNER</li>
+            <li class="header__nav-item">COMPANY</li>
+            <li class="header__nav-item">EMPLOYMENT</li>
+          </ul>
+        </div>
+        <div class="right__header">
+          <i class="material-icons">menu</i>
+          <span>MENU</span>
+        </div>
+      </div>
+    </header>
+    <div class="content__section">
+      <div class="inner">
+        <div class="page-route"><span>HOME/PARTNER</span></div>
+      </div>
+      <section class="connecting__section">
+        <div class="inner">
+          <div class="connecting__left">
+            <button class="btn-blue">프로필 관리</button>
+            <button class="btn">팔로잉/팔로워 관리</button>
+          </div>
+
+          <div class="connection__right">
+            <div class="connection__title">
+              <strong>Connecting people</strong>
+            </div>
+            <div class="connection__content">
+              <ul class="connection__info">
+                <li>기획자 <div class="circle"><span>20</span></div></li>
+                <li>디자이너<div class="circle"><span>20</span></div></li>
+                <li>개발자<div class="circle"><span>20</span></div></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <main class="partner__main">
+        <div class="inner">
+            <div class="partner_search">
+              <h1>파트너 정보검색</h1>
+              <form class="search__form" action="" method="post">
+                <div class="search__select">
+                  <select name="recurit_posi">
+                    <option hidden selected>업무분야</option>
+                    <option>개발자</option>
+                    <option>기획자</option>
+                    <option>디자이너</option>
+                  </select>
+                  <select name="indus_name">
+                    <option hidden selected>직종</option>
+                    <option>웹서비스</option>
+                    <option>모바일</option>
+                    <option>IOT</option>
+                    <option>O2O</option>
+                    <option> 핀테크</option>
+                  </select>
+                  <select name="">
+                    <option hidden selected>활동분야</option>
+                    <option>JAVA</option>
+                    <option>React</option>
+                    <option>JavaScript</option>
+                  </select>
+                  <input name="user_edu" type="search" placeholder="학교명">
+                </div>
+                <div class="keyword">
+                  <input type="search" placeholder="검색어를 입력해주세요.">
+                </div>
+              </form>
+              <div class="result_tag">
+                <div class="tag__left"></div>
+                <div><i class="material-icons">close</i></div>
+              </div>
+            
+              <div class="connecting_people">
+                <div class="subtitle">
+                  <h2>나와 연결된 사람들</h2>
+                </div>
+                <h3>검색결과 (30)</h3>
+                <!-- 나와 연결된 사람 결과 for문 -->
+                <div class="search_result">
+                  <div class="result__left">
+                    <div class="avatar">
+                      <img src="../../assets/avatar.png" alt="" />
+                    </div>
+                    <ul class="avatar__info">
+                      <li><strong>홍길동</strong></li>
+                      <li>서울대학교</li>
+                      <li>기획자</li>
+                    </ul>
+                  </div>
+                  <div class="result__right">
+                    <button class="btn">취소</button>
+                  </div>
+                </div>  
+                <!-- for문 -->
+                <div class="more">
+                  <button class="btn">more</button>
+                </div>
+              </div>
+
+
+              <div class="connecting_people">
+                <div class="subtitle">
+                  <h2>그 외</h2>
+                </div>
+                <h3>검색결과 (30)</h3>
+                <!-- 검색결과 for문 -->
+                <div class="search_result">
+                  <div class="result__left">
+                    <div class="avatar">
+                      <img src="../../assets/avatar.png" alt="" />
+                    </div>
+                    <ul class="avatar__info">
+                      <li><strong>홍길동</strong></li>
+                      <li>MicroSoft, ceo</li>
+                      <li>기획자</li>
+                    </ul>
+                  </div>
+                  <div class="result__right">
+                    <button class="btn">팔로우</button>
+                  </div>
+                </div>  
+                <!-- for문 -->
+
+                <div class="search_result">
+                  <div class="result__left">
+                    <div class="avatar">
+                      <img src="../../assets/avatar.png" alt="" />
+                    </div>
+                    <ul class="avatar__info">
+                      <li><strong>홍길동</strong></li>
+                      <li>MicroSoft, ceo</li>
+                      <li>기획자</li>
+                    </ul>
+                  </div>
+                  <div class="result__right">
+                    <button class="btn">팔로우</button>
+                  </div>
+                </div> 
+                
+                <div class="more">
+                  <button class="btn">more</button>
+                </div>
+              </div>
+
+            </div>
+
+            </div>
+
+            
+            <div class="partner_search">
+              <div class="inner">
+                <div class="popular">
+                  <div class="popular_people">
+                    <h1>인기프로필</h1>
+                    <!-- <div class="subtitle">
+                      <h2>인기 프로필</h2>
+                    </div> -->
+                    <h3>검색결과 (30)</h3>
+                    <!-- 인기프로필 for문 -->
+                    <div class="search_result">
+                      <div class="result__left">
+                        <div class="avatar">
+                          <img src="../../assets/avatar.png" alt="" />
+                        </div>
+                        <ul class="avatar__info">
+                          <li><strong>홍길동</strong></li>
+                          <li>MicroSoft, ceo</li>
+                          <li>기획자</li>
+                        </ul>
+                      </div>
+                      <div class="result__right">
+                        <button class="btn">팔로우</button>
+                      </div>
+                    </div>  
+                    <!-- for문 -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+      </main>
+
+    </div>
+  </body>
+</html>
