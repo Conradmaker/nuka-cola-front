@@ -178,7 +178,7 @@ main .inner {
   color: #30409f;
   cursor: pointer;
 }
-.post__btn__wrapper:hover {
+.like_btn:hover {
   color: #151c44;
 }
 .post__btn__wrapper i {
@@ -230,4 +230,102 @@ main .inner {
 .comment__btn-wrapper span:hover {
   color: #30409f;
   text-decoration: underline;
+}
+
+/* 프로필 */
+.profile__content {
+  position: sticky;
+  top: 90px;
+}
+.user__profile {
+  display: flex;
+  gap: 20px;
+}
+.user__profile ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user__profile ul li {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.user__profile ul li + li {
+  margin-top: 10px;
+}
+.user__profile ul li span {
+  font-size: 14px;
+}
+.user__profile ul li b {
+  font-weight: bold;
+}
+.profile__summary {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.profile__summary p {
+  margin-left: 22px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.profile__btn_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.profile__btn_wrapper .btn {
+  width: 48%;
+}
+.recommend__comp {
+  position: sticky;
+  top: 395px;
+  padding: 0;
+  padding-bottom: 10px;
+}
+.recommend__comp .rec__comp_title {
+  color: #30409f;
+  font-weight: bold;
+  padding: 15px 20px 10px 30px;
+}
+.recommend__comp ul {
+  display: flex;
+  flex-direction: column;
+}
+.recommend__comp li {
+  padding: 5px 30px;
+  display: flex;
+  gap: 15px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.recommend__comp li + li {
+  border-top: 1px solid rgb(231, 231, 231);
+}
+.recommend__comp li:hover {
+  background: rgb(231, 231, 231);
+}
+.recommend__comp li .comp_avatar {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(194, 194, 194);
+}
+.recommend__comp li .comp_avatar img {
+  max-width: 98%;
+  max-height: 98%;
+}
+.comp_summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 13px;
+}
+.comp_summary b {
+  font-size: 16px;
+  font-weight: bold;
 }
