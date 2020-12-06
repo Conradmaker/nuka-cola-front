@@ -60,10 +60,16 @@ main .inner .section__banner {
 .login__nav li:hover {
   background: #eaecff;
 }
+.login__nav li:hover span,
+.login__nav li:hover b {
+  transform: scale(1.1);
+}
 .login__nav li span {
+  transition: all 0.3s;
   font-size: 13px;
 }
 .login__nav li b {
+  transition: all 0.3s;
   font-size: 20px;
   font-weight: bold;
 }

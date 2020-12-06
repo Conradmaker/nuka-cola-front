@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 .inner {
   max-width: 1100px;
@@ -64,6 +65,20 @@
   box-sizing: border-box;
   margin-bottom: 20px;
 }
+
+.avatar-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(197, 197, 197);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.avatar-small img {
+  max-width: 100%;
+  max-height: 100%;
+}
 header .inner {
   display: flex;
   justify-content: space-between;
@@ -75,6 +90,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
+  background: #fff;
 }
 header .left__header {
   display: flex;

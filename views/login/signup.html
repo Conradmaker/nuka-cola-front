@@ -69,7 +69,7 @@
                 <input type="text" />
               </div>
               <div class="login__btn__wrapper">
-                <button class="btn">비밀번호 찾기</button>
+                <button class="btn">취소</button>
                 <button type="button" id="sign-up-next" class="btn btn-blue">
                   다음
                 </button>
@@ -121,7 +121,7 @@
             <img src="../../assets/loginImage.jpg" alt="" />
           </div>
           <ul class="login__nav">
-            <li>
+            <li onClick='location.href="/views/login/login.html"'>
               <span>회원이신가요?</span>
               <b>LOGIN</b>
             </li>
@@ -138,11 +138,13 @@
       </div>
     </main>
     <script defer>
+      // 다음버튼
       document.querySelector("#sign-up-next").addEventListener("click", () => {
         document
           .querySelector(".form__container")
           .classList.toggle("form_move");
       });
+      //이전버튼
       document
         .querySelector("#sign-up-before")
         .addEventListener("click", () => {
@@ -150,6 +152,7 @@
             .querySelector(".form__container")
             .classList.toggle("form_move");
         });
+      // 비밀번호확인 체크
       document
         .querySelector("#password-check")
         .addEventListener("input", (e) => {
