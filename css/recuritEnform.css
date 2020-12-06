@@ -1,0 +1,157 @@
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+header .left__header {
+  display: flex;
+  align-items: center;
+}
+
+.left__header .logo {
+  width: 150px;
+}
+
+.left__header .logo img {
+  width: 100%;
+}
+
+.left__header .header__nav {
+  margin-left: 30px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__nav li {
+}
+
+header .right__header {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.right__header i {
+}
+
+.right__header span {
+  padding-top: 3px;
+  font-size: 18px;
+}
+
+.content__section {
+}
+
+.content__section .inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.inner .section__title {
+  background: #ffffff;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 80%;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #707070;
+}
+
+.section__title h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.main__main__section {
+  background: #f7fbff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.main__main__section div {
+  border: 1px solid pink;
+}
+
+.main__main__section .main__section__left {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 20px;
+  flex: 8;
+  padding-left: 105px;
+}
+
+.main__section__left .section__left__top {
+  display: flex;
+  flex-direction: row;
+  flex: 5;
+}
+
+.section__left__top .logo {
+  width: 150px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.logo__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.logo__info strong {
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.logo__info span {
+  font-size: 13px;
+}
+
+.main__section__left .section__left__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px 20px;
+  padding-left: 5px;
+  flex: 5;
+}
+
+.section__left__bottom strong {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.section__left__bottom input {
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+.section__right__nav {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+}
+
+.section__right__nav .right__nav {
+}
