@@ -1,0 +1,212 @@
+body {
+  background: #f7fbff;
+}
+
+.main__section {
+  display: flex;
+  gap: 20px;
+}
+
+.main__section div {
+  /* border: 1px solid red; */
+}
+
+.main__section .main__section__right {
+  flex: 6;
+}
+
+.main__section .main__section__left {
+  flex: 4;
+}
+
+.main__section__right .interview__step {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.interview__step .interview__step-progress {
+  padding: 30px;
+  margin: 10px;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.interview__step .interview__step-admin {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.content__carrer {
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  background: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content__carrer strong {
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.content__carrer-one {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.content__carrer-one .carrer-one__img {
+  width: 100px;
+}
+
+.carrer-one__img img {
+  width: 100%;
+}
+
+.carrer-one__companyName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.carrer-one__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.content__edu {
+  padding-bottom: 30px;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.content__edu strong {
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.content__edu .content__edu-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__edu-detail strong {
+  padding-left: 40px;
+}
+
+.content__edu-detail span {
+  padding-left: 40px;
+}
+
+.content__usingTech {
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  background: #ffffff;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.content__usingTech strong {
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.content__usigTech-list {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.content__usigTech-list button {
+  background: #30409f;
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+}
+
+.main__section__left .content__message-sending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  background: #ffffff;
+  padding-right: 10px;
+}
+
+.content__message-sending input {
+  display: flex;
+  border: none;
+  width: 85%;
+  height: 100%;
+}
+
+.content__message-sending button {
+  width: 15%;
+  height: 50%;
+  border: none;
+  background: #30409f;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.content__message-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.content__message-box .message-box__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.message-box__info-img {
+  width: 100px;
+}
+
+.message-box__info-img img {
+  width: 100%;
+}
+
+.message-box__info-userName {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.message-box__info-sendingTime {
+  display: flex;
+  align-items: flex-end;
+  font-size: 15px;
+}
+
+.message-box__content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
