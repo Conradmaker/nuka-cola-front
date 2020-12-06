@@ -1,0 +1,42 @@
+/* 지우지 마세요! */
+
+html {
+  background: #eaf8fd;
+  color: #2e4d89;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+}
+.imagess {
+  width: 340px;
+  background-image: url("./0e8bba3b043d49c8064324bedd01997f.gif");
+  height: 270px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.list-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+a {
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+}
+li + li {
+  margin-top: 5px;
+}
+li {
+  padding: 5px;
+  list-style: none;
+}
+li:hover {
+  text-decoration: underline;
+}
