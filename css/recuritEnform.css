@@ -1,5 +1,13 @@
 header {
   background: #ffffff;
+  margin: 0;
+}
+body {
+  background: #f7fbff;
+}
+
+.content__section {
+  padding-top: 50px;
 }
 
 .inner__title h1 {
@@ -7,7 +15,7 @@ header {
   justify-content: center;
   padding: 50px;
   font-size: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   border-bottom: 1px solid #707070;
   background: #ffffff;
 }
