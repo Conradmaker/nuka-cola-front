@@ -401,3 +401,90 @@ header .right__header {
 .menu__right ul li:hover {
   text-decoration: underline;
 }
+
+/* 모달레이아웃 */
+@keyframes modalFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes modalFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes modalSlideOpen {
+  0% {
+    transform: translateY(1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes modalSlideClose {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(1000px);
+  }
+}
+.modal__wrapper {
+  z-index: 9999;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  animation: modalFadeIn 0.3s ease-in-out forwards;
+}
+.modal-active {
+  display: flex;
+}
+.modal-active .modal__box {
+  animation: modalSlideClose 0.3s ease-in-out forwards;
+}
+.modal__wrapper .modal__box {
+  width: 400px;
+  padding: 25px 30px;
+  background: #fff;
+  animation: modalSlideOpen 0.3s ease-in-out forwards;
+}
+.modal__box h1 {
+  font-weight: bold;
+  font-size: 23px;
+}
+.modal__box .input__box {
+  max-width: 100%;
+}
+.modal__box .login__btn__wrapper {
+  align-self: flex-end;
+}
+.modal__box .modal__form {
+  display: flex;
+  flex-direction: column;
+}
+.modal__box select {
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../assets/keyboard_arrow_down-24px.svg") no-repeat 100% 50%; /* 화살표 모양의 이미지 */
+}
+.modal__box select::-ms-expand {
+  display: none;
+}

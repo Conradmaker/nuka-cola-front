@@ -2,10 +2,10 @@ body {
   height: 100vh;
 }
 main {
-  padding-top: 60px;
   height: 100%;
 }
 main .inner {
+  padding-top: 60px;
   display: flex;
   height: 100%;
 }
@@ -33,7 +33,7 @@ main .inner .section__banner {
 }
 .section__banner img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 500px;
 }
 .section__banner .login__nav {
   min-height: 130px;
@@ -102,7 +102,7 @@ main .inner .section__banner {
 .section__login .forgot-email:hover {
   color: #000;
 }
-.section__login .signup-check {
+.signup-check {
   display: none;
   color: red;
 }
@@ -149,5 +149,9 @@ main .inner .section__banner {
   background: url("../assets/keyboard_arrow_down-24px.svg") no-repeat 100% 50%; /* 화살표 모양의 이미지 */
 }
 .more__info select::-ms-expand {
+  display: none;
+}
+
+#edit-pwd-modal-form {
   display: none;
 }

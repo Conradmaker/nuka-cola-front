@@ -103,13 +103,17 @@
               <label for="">이메일</label>
               <input type="text" />
             </div>
-            <small class="forgot-email">이메일이 기억나지 않으세요?</small>
+            <small class="forgot-email" id="find-email-btn"
+              >이메일이 기억나지 않으세요?</small
+            >
             <div class="input__box">
               <label for="">비밀번호</label>
               <input type="text" />
             </div>
             <div class="login__btn__wrapper">
-              <button class="btn">비밀번호 찾기</button>
+              <button type="button" id="find-pwd-btn" class="btn">
+                비밀번호 찾기
+              </button>
               <button class="btn btn-blue">로그인</button>
               <button class="btn btn-facebook"></button>
               <button class="btn btn-katok"></button>
@@ -137,5 +141,176 @@
         </div>
       </div>
     </main>
+
+    <!-- 이메일찾기 모달 -->
+    <div id="find-email-modal" class="modal__wrapper">
+      <div id="find-email-modal-box" class="modal__box">
+        <h1 id="find-email-modal-title">이메일 찾기</h1>
+        <form id="find-email-modal-form" class="modal__form">
+          <div class="input__box">
+            <label for="">이름</label>
+            <input type="text" />
+          </div>
+          <div class="input__box">
+            <label for="">생년월일</label>
+            <input type="text" />
+          </div>
+          <div class="input__box">
+            <label for="">본인확인 질문</label>
+            <select name="are-u" id="">
+              <option value="출신 초등학교 이름">출신초등학교 이름은?</option>
+              <option value="어머니의 성함">어머니의 성함은?</option>
+              <option value="나의 보물 1호">나의 보물 1호는?</option>
+            </select>
+          </div>
+          <div class="input__box">
+            <label for="">질문의 답</label>
+            <input type="text" />
+          </div>
+          <div class="login__btn__wrapper">
+            <button type="button" id="find-email-close" class="btn">
+              닫기
+            </button>
+            <button type="button" class="btn btn-blue">찾기</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- 비밀번호 찾기 모달 -->
+    <div id="find-pwd-modal" class="modal__wrapper">
+      <div id="find-pwd-modal-box" class="modal__box">
+        <h1 id="find-pwd-modal-title">비밀번호 찾기</h1>
+        <form id="find-pwd-modal-form" class="modal__form">
+          <div class="input__box">
+            <label for="">이메일</label>
+            <input type="text" />
+          </div>
+          <div class="input__box">
+            <label for="">생년월일</label>
+            <input type="text" />
+          </div>
+          <div class="input__box">
+            <label for="">본인확인 질문</label>
+            <select name="are-u">
+              <option value="출신 초등학교 이름">출신초등학교 이름은?</option>
+              <option value="어머니의 성함">어머니의 성함은?</option>
+              <option value="나의 보물 1호">나의 보물 1호는?</option>
+            </select>
+          </div>
+          <div class="input__box">
+            <label for="">질문의 답</label>
+            <input type="text" />
+          </div>
+          <div class="login__btn__wrapper">
+            <button type="button" class="btn find-pwd-close">닫기</button>
+            <button type="button" id="find-pwd-submit" class="btn btn-blue">
+              찾기
+            </button>
+          </div>
+        </form>
+        <!-- 비번변경 -->
+        <form id="edit-pwd-modal-form" class="modal__form">
+          <div class="input__box">
+            <label for="">비밀번호</label>
+            <input id="password" type="text" />
+          </div>
+          <div class="input__box">
+            <label for="">비밀번호 확인</label>
+            <input id="password-check" type="text" />
+          </div>
+          <small id="alert_check_pwd" class="signup-check"
+            >비밀번호를 확인해주세요</small
+          >
+          <div class="login__btn__wrapper">
+            <button type="button" class="btn find-pwd-close">닫기</button>
+            <button type="button" id="edit-pwd-submit" class="btn btn-blue">
+              변경
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script defer>
+      // 이메일모달오픈
+      document
+        .querySelector("#find-email-btn")
+        .addEventListener("click", () => {
+          document
+            .querySelector("#find-email-modal")
+            .classList.toggle("modal-active");
+        });
+      // 이메일모달닫기
+      document
+        .querySelector("#find-email-close")
+        .addEventListener("click", () => {
+          document.querySelector("#find-email-modal").style.animation =
+            "modalFadeOut 0.3s ease-in-out forwards";
+          document.querySelector("#find-email-modal-box").style.animation =
+            "modalSlideClose 0.3s ease-in-out forwards";
+          setTimeout(() => {
+            document
+              .querySelector("#find-email-modal")
+              .classList.toggle("modal-active");
+
+            document.querySelector("#find-email-modal").style.animation =
+              "modalFadeIn 0.3s ease-in-out forwards";
+
+            document.querySelector("#find-email-modal-box").style.animation =
+              "modalSlideOpen 0.3s ease-in-out forwards";
+          }, 300);
+        });
+
+      // 비번모달오픈
+      document.querySelector("#find-pwd-btn").addEventListener("click", () => {
+        document
+          .querySelector("#find-pwd-modal")
+          .classList.toggle("modal-active");
+      });
+      // 비번모달닫기
+      document.querySelectorAll(".find-pwd-close").forEach((v) => {
+        v.addEventListener("click", () => {
+          document.querySelector("#find-pwd-modal").style.animation =
+            "modalFadeOut 0.3s ease-in-out forwards";
+          document.querySelector("#find-pwd-modal-box").style.animation =
+            "modalSlideClose 0.3s ease-in-out forwards";
+          setTimeout(() => {
+            document
+              .querySelector("#find-pwd-modal")
+              .classList.toggle("modal-active");
+
+            document.querySelector("#find-pwd-modal").style.animation =
+              "modalFadeIn 0.3s ease-in-out forwards";
+
+            document.querySelector("#find-pwd-modal-box").style.animation =
+              "modalSlideOpen 0.3s ease-in-out forwards";
+          }, 300);
+        });
+      });
+
+      //비밀번호 찾기
+      document
+        .querySelector("#find-pwd-submit")
+        .addEventListener("click", () => {
+          //로직추가
+          document.querySelector("#find-pwd-modal-title").innerText =
+            "비밀번호 변경";
+          document.querySelector("#find-pwd-modal-form").style.display = "none";
+          document.querySelector("#edit-pwd-modal-form").style.display =
+            "initial";
+        });
+      // 비밀번호확인 체크
+      document
+        .querySelector("#password-check")
+        .addEventListener("input", (e) => {
+          if (document.querySelector("#password").value !== e.target.value) {
+            document.querySelector("#alert_check_pwd").style.display = "block";
+            console.log(document.querySelector("#password").value);
+          } else {
+            document.querySelector("#alert_check_pwd").style.display = "none";
+          }
+        });
+    </script>
   </body>
 </html>
