@@ -59,6 +59,7 @@ body {
   margin-left: 20px;
   margin-bottom: 10px;
   width: 80%;
+  border-bottom: 1px solid #c7c7c7;
 }
 
 .content__carrer-one .carrer-one__img {
