@@ -1,0 +1,331 @@
+main {
+  margin-top: 60px;
+  background: #f7fbff;
+}
+main .inner {
+  padding: 30px 0;
+  display: flex;
+  gap: 25px;
+}
+.timeline__section-left {
+  flex: 2.5;
+}
+.timeline__section-rifht {
+  flex: 1;
+}
+.timeline__section-left h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.content_title_banner {
+  height: 90px;
+  border: none;
+  background: #6374e8;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  position: relative;
+}
+.content_title_banner p {
+  font-size: 23px;
+}
+.content_title_banner img {
+  width: 270px;
+  position: absolute;
+  bottom: -15px;
+  right: 30px;
+}
+.post_form_wrapper {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+}
+.post_form_wrapper .post_form {
+  height: 0;
+  overflow: hidden;
+}
+.post_form-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 45px;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background: #30409f;
+  cursor: pointer;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all 0.3s;
+}
+.post_form-active {
+  transition: all 0.3s;
+  height: 200px;
+  padding-bottom: 10px;
+}
+.post_form-active h3 {
+  display: none;
+}
+.post_form-active .post_form-btn {
+  transform: translate(-50%, 50%) rotate(135deg);
+  background: #9f305b;
+}
+.post_form-active .post_form {
+  padding: 1px;
+  height: 100%;
+  width: 100%;
+}
+.post_form span {
+  display: block;
+  margin-bottom: 10px;
+}
+.post_form textarea {
+  padding: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 60%;
+  resize: none;
+  border: solid 1px #c7c7c7;
+}
+.post_form .post_form-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.post_form-btn-wrapper .btn {
+  width: 60px;
+  height: 27px;
+}
+.image__input_box {
+  cursor: pointer;
+  height: 27px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #a5a5a5;
+}
+.image__input_box:hover {
+  color: #6d6d6d;
+}
+.image__input_box p {
+  font-size: 14px;
+}
+.image__input_box i {
+  font-size: 20px;
+}
+
+/* 포스트 */
+.post__item-wrapper .post__user-info {
+  display: flex;
+  align-items: center;
+}
+.post__user-info .user__summary {
+  flex: 1;
+  margin-left: 10px;
+  padding: 5px;
+}
+.user__summary strong {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.post__user-info .follow__btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #30409f;
+  cursor: pointer;
+}
+.follow__btn:hover {
+  color: #10163b;
+}
+.follow__btn i {
+  font-size: 20px;
+  padding-bottom: 2px;
+}
+.follow__btn p {
+  font-size: 14px;
+}
+.post__item-wrapper article {
+  margin-top: 10px;
+  color: #353535;
+  line-height: 1.5;
+}
+.post__item-wrapper .post__date {
+  display: block;
+  font-size: 13px;
+  margin: 5px 0 10px 0;
+  color: #8f8f8f;
+}
+.post__item-wrapper .post__btn__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #30409f;
+  cursor: pointer;
+}
+.like_btn:hover {
+  color: #151c44;
+}
+.post__btn__wrapper i {
+  font-size: 20px;
+  padding-bottom: 3px;
+  margin-right: 3px;
+}
+.post__btn__wrapper .like_btn {
+  display: flex;
+  align-items: center;
+}
+.comment_btn_active {
+  color: #777;
+}
+
+/* 댓글 */
+.post__comment_list {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s;
+}
+.comment_list_active {
+  height: auto;
+  margin-top: 20px;
+  border-top: 2px solid #000;
+  padding-top: 20px;
+}
+.post__comment_list li + li {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgb(209, 209, 209);
+}
+.post__comment_list .comment_content {
+  font-size: 15px;
+  padding: 10px 0;
+  color: rgb(65, 65, 65);
+}
+.comment__btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.comment__btn-wrapper span {
+  font-size: 15px;
+  cursor: pointer;
+}
+.comment__btn-wrapper span:hover {
+  color: #30409f;
+  text-decoration: underline;
+}
+
+/* 프로필 */
+.profile__content {
+  position: sticky;
+  top: 90px;
+}
+.user__profile {
+  display: flex;
+  gap: 20px;
+}
+.user__profile ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user__profile ul li {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.user__profile ul li + li {
+  margin-top: 10px;
+}
+.user__profile ul li span {
+  font-size: 14px;
+}
+.user__profile ul li b {
+  font-weight: bold;
+}
+.profile__summary {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.profile__summary p {
+  margin-left: 22px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.profile__btn_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.profile__btn_wrapper .btn {
+  width: 48%;
+}
+.recommend__comp {
+  position: sticky;
+  top: 395px;
+  padding: 0;
+  padding-bottom: 10px;
+}
+.recommend__comp .rec__comp_title {
+  color: #30409f;
+  font-weight: bold;
+  padding: 15px 20px 10px 30px;
+}
+.recommend__comp ul {
+  display: flex;
+  flex-direction: column;
+}
+.recommend__comp li {
+  padding: 5px 30px;
+  display: flex;
+  gap: 15px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.recommend__comp li + li {
+  border-top: 1px solid rgb(231, 231, 231);
+}
+.recommend__comp li:hover {
+  background: rgb(231, 231, 231);
+}
+.recommend__comp li .comp_avatar {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(194, 194, 194);
+}
+.recommend__comp li .comp_avatar img {
+  max-width: 98%;
+  max-height: 98%;
+}
+.comp_summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 13px;
+}
+.comp_summary b {
+  font-size: 16px;
+  font-weight: bold;
+}

@@ -2,10 +2,10 @@ body {
   height: 100vh;
 }
 main {
-  padding-top: 60px;
   height: 100%;
 }
 main .inner {
+  padding-top: 60px;
   display: flex;
   height: 100%;
 }
@@ -14,16 +14,18 @@ main .inner .section__login {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
 }
 
 main .inner .section__banner {
   flex: 1;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 .section__banner .img__wrapper {
+  flex: 1;
   width: 100%;
-  max-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,10 +33,10 @@ main .inner .section__banner {
 }
 .section__banner img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 500px;
 }
 .section__banner .login__nav {
-  flex: 1;
+  min-height: 130px;
   background: #6374e8;
   display: flex;
   align-items: flex-end;
@@ -58,10 +60,16 @@ main .inner .section__banner {
 .login__nav li:hover {
   background: #eaecff;
 }
+.login__nav li:hover span,
+.login__nav li:hover b {
+  transform: scale(1.1);
+}
 .login__nav li span {
+  transition: all 0.3s;
   font-size: 13px;
 }
 .login__nav li b {
+  transition: all 0.3s;
   font-size: 20px;
   font-weight: bold;
 }
@@ -73,7 +81,7 @@ main .inner .section__banner {
   font-weight: bold;
 }
 .section__login .login__title {
-  width: 70%;
+  width: 30%;
   border-bottom: 1px solid #000;
   margin-bottom: 20px;
 }
@@ -83,7 +91,7 @@ main .inner .section__banner {
   padding: 10px 0;
 }
 .section__login small {
-  width: 45%;
+  width: 70%;
   text-align: end;
   display: inline-block;
   font-size: 12px;
@@ -91,8 +99,12 @@ main .inner .section__banner {
   color: #777;
   cursor: pointer;
 }
-.section__login small:hover {
+.section__login .forgot-email:hover {
   color: #000;
+}
+#alert_check_pwd {
+  display: none;
+  color: red;
 }
 .login__btn__wrapper {
   width: 70%;
@@ -105,4 +117,41 @@ main .inner .section__banner {
   width: 47%;
   height: 36px;
   margin-top: 20px;
+}
+.form__container {
+  position: relative;
+  transition: all 0.3s;
+}
+.form_move {
+  transform: translateX(-600px);
+}
+.initial__info {
+  transition: all 0.3s;
+}
+.form_move .initial__info {
+  opacity: 0;
+}
+.more__info {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform: translateX(600px);
+}
+.more__info select {
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../assets/keyboard_arrow_down-24px.svg") no-repeat 100% 50%; /* 화살표 모양의 이미지 */
+}
+.more__info select::-ms-expand {
+  display: none;
+}
+
+#edit-pwd-modal-form {
+  display: none;
 }

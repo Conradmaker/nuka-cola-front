@@ -1,0 +1,404 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.recruit__title__section {
+  height: 160px;
+  margin-top: 100px;
+}
+
+.recruit__title__section .inner {
+  display: flex;
+  height: 100%;
+}
+
+.recruit__title__section .inner .left__section {
+  height: 100%;
+  flex: 6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.recruit__title__section .inner .left__section .title__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.recruit__title__section .inner .left__section .title__info strong {
+  font-size: 25px;
+  font-weight: bold;
+}
+.recruit__title__section .inner .left__section .title__info span {
+  font-size: 15px;
+}
+.recruit__title__section .inner .right__section {
+  height: 100%;
+  flex: 4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.recruit__title__section .inner .right__section .email__info {
+  margin-bottom: 10px;
+}
+
+/* ---------------여기부터 채용 정보 부분 ---------------*/
+.recruit__all__wrapper {
+  margin-top: 30px;
+  background: #f7fbff;
+}
+.recruit__all__wrapper .inner {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid #c7c7c7;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.recruit__content {
+  width: 100%;
+  padding: 25px 30px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.recruit__all__wrapper .inner .recruit__second-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__left-contents__wrapper {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+}
+
+.recruit__all__wrapper .inner .recruit__content .recruit__content__title {
+  margin-bottom: 20px;
+}
+
+.recruit__all__wrapper .inner strong:first-child {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__left-contents__wrapper
+  .recruit__content
+  .recruit__content__techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__left-contents__wrapper
+  .recruit__content
+  .recruit__content__techs
+  span {
+  color: white;
+  border-radius: 30px;
+  background-color: #30409f;
+  height: 30px;
+  width: 70px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__left-contents__wrapper
+  .recruit__content
+  .recruit__content__area {
+  color: #707070;
+}
+
+.recruit__content {
+  line-height: 20px;
+}
+
+/*--------------지원자보기, 북마크한사람 ... 버튼 있는 박스------------------*/
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__btns__wrapper {
+  display: flex;
+  height: 250px;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__btns__wrapper
+  .recruit__content {
+  padding: 0px;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__btns__wrapper
+  .item1 {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__btns__wrapper
+  .item1
+  button {
+  background: white;
+  color: #30409f;
+  border-color: #30409f;
+  border-radius: 3px;
+  width: 200px;
+  height: 40px;
+}
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__btns__wrapper
+  .item1
+  button:hover {
+  cursor: pointer;
+  animation: fadeIn 0.3s linear;
+}
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__btns__wrapper
+  .item1
+  span {
+  color: #707070;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__btns__wrapper
+  .item1
+  span:hover {
+  cursor: pointer;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__btns__wrapper
+  .item2 {
+  /*지원자보기 버튼있는곳 박스 파란색 띠 꾸며주는 코드*/
+  background: #6374e8;
+  border-left: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  width: 7%;
+}
+
+/*---------------채용 담당자 박스 ------------------*/
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__title
+  ul
+  li:first-child {
+  font-size: 15px;
+  font-weight: bold;
+}
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__title
+  ul
+  li:nth-child(2) {
+  font-size: 10px;
+  color: #707070;
+}
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__title
+  ul
+  li {
+  margin: 10px;
+}
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__profile {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__profile
+  .manager__img {
+  margin-left: -15px;
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #c7c7c7;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__profile
+  .manager__img
+  img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__profile {
+  padding: 20px;
+  border-bottom: 2px solid #c7c7c7;
+  margin-bottom: 20px;
+  height: 70px;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__profile
+  .recruit__manager__info
+  li:first-child {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__profile
+  .recruit__manager__info
+  li:nth-child(2) {
+  font-size: 12px;
+  color: #707070;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__profile:hover {
+  cursor: pointer;
+  background: #f7fbff;
+  animation: fadeIn 0.3s linear;
+  border-radius: 40px;
+}
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__info-table
+  table {
+  text-align: left;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__info-table
+  table
+  th {
+  color: #707070;
+  font-size: 13px;
+  width: 100px;
+  padding: 5px;
+}
+
+.recruit__all__wrapper
+  .inner
+  .recruit__second-wrapper
+  .recruit__right-contents__wrapper
+  .recruit__manager
+  .recruit__manager__info-table
+  table
+  td {
+  width: 200px;
+  font-size: 13px;
+}

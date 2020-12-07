@@ -1,0 +1,235 @@
+.recruit__manage-detail__main-wrapper {
+  margin-top: 60px;
+  background-color: rgb(247, 251, 255);
+}
+
+.recruit__manage-detail__main-wrapper .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recruit__manage-detail__main-wrapper .inner .recruit-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 25px;
+  height: 100px;
+}
+.recruit__manage-detail__main-wrapper .inner .recruit-title strong {
+  margin-left: 20px;
+}
+.recruit__manage-detail__main-wrapper .recruit__contents-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__sidebar {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+}
+
+/*현재 보고있는 페이지 글자 굵게*/
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__sidebar
+  .color-stress {
+  color: #30409f;
+  font-weight: bold;
+}
+
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__sidebar
+  .sidebar__item {
+  display: flex;
+  height: 60px;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #c7c7c7;
+  background-color: #ffffff;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__sidebar
+  .sidebar__item
+  span {
+  width: 130px;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__sidebar
+  .sidebar__item
+  span:hover {
+  color: #30409f;
+  font-weight: bold;
+  cursor: pointer;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__sidebar
+  .sidebar__item
+  li {
+  width: 130px;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__sidebar
+  .sidebar__item
+  li:hover {
+  color: #30409f;
+  font-weight: bold;
+  cursor: pointer;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__sidebar
+  .item2 {
+  height: 120px;
+}
+
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__content {
+  flex: 7.5;
+  display: flex;
+  flex-direction: column;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__content
+  .recruit__content-title {
+  margin-top: 10px;
+  height: 35px;
+  font-size: 18px;
+  color: #707070;
+  border-bottom: 2px solid #707070;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__content
+  .recruit__applier-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__content
+  .recruit__applier-list
+  .recruit__applier-info {
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+  padding: 10px;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: all 0.3s;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__content
+  .recruit__applier-list
+  .recruit__applier-info:hover {
+  background-color: #c7c7c7;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__content
+  .recruit__applier-list
+  .recruit__applier-info
+  .recruit__applier-profile {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  width: 40%;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__content
+  .recruit__applier-list
+  .recruit__applier-info
+  .recruit__applier-profile
+  .applier-img {
+  display: flex;
+  width: 30%;
+  height: 90%;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__content
+  .recruit__applier-list
+  .recruit__applier-info
+  .recruit__applier-profile
+  .applier-img
+  img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px #000;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__content
+  .recruit__applier-list
+  .recruit__applier-info
+  .recruit__applier-profile
+  .applier-name {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+.recruit__manage-detail__main-wrapper
+  .recruit__contents-wrapper
+  .recruit__content
+  .recruit__applier-list
+  .recruit__applier-info
+  .recruit__applier-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  margin-right: 20px;
+}
+.recruit__applier-info .recruit__applier-state .recruit__stage {
+  display: flex;
+}
+
+.state-sign {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+/*서류 접수*/
+.submit-state {
+  background: rgb(241, 196, 15);
+}
+/*탈락*/
+.fail-state {
+  background: rgb(231, 76, 60);
+}
+/*서류 합격*/
+.pass-state {
+  background: #6374e8;
+}
+/*팀 합류*/
+.join-state {
+  background: #30409f;
+}
+
+.recruit__applier-info .recruit__applier-state .recruit__expire {
+  color: rgb(231, 76, 60);
+}
+.recruit__applier-info .recruit__applier-state .recruit__apply-date {
+  color: #707070;
+}
