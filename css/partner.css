@@ -132,6 +132,7 @@ section .connection__right{
 .search__form input{
     width:200px;
     height:32px;
+    
 }
 .keyword{
     display: flex;
@@ -147,11 +148,17 @@ section .connection__right{
     width:400px;
     height:30px;
 }
-.keyword input::-ms-clear {
+/* .keyword input::-ms-clear {
+    display: none;
+} */
+.search__select input::-webkit-search-decoration,
+.search__select input::-webkit-search-cancel-button {
     display: none;
 }
-
-
+.keyword input::-webkit-search-decoration,
+.keyword input::-webkit-search-cancel-button {
+    display: none;
+}
 
 
 .keyword input:focus{
