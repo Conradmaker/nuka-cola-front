@@ -1,0 +1,148 @@
+body {
+  background: #f7fbff;
+}
+
+div {
+  /* border: 1px solid red; */
+}
+
+.inner {
+  display: flex;
+  gap: 20px;
+}
+
+.section__rightAll {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__section .section__right {
+  flex: 5;
+}
+
+.content__section .section__left {
+  flex: 5;
+}
+
+.content__section .section__title {
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.right__recruitEnroll-btn {
+  margin-bottom: 20px;
+}
+
+.right__recruitEnroll-btn button {
+  background: #30409f;
+  padding: 10px 15px 10px 15px;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+}
+
+.right__recruitState-btn {
+  display: flex;
+  flex-direction: column;
+  width: 188px;
+}
+
+.right__recruitState-btn button {
+  background: #ffffff;
+  padding: 10px 15px 10px 15px;
+  color: #000000;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+}
+
+.section__left .section__left-title {
+  margin-top: 190px;
+  margin-bottom: 20px;
+}
+
+.section__left-title h5 {
+  font-weight: bold;
+}
+
+.section__left__recruit-infoBox {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  padding-left: 50px;
+  background: #ffffff;
+  margin-top: 20px;
+}
+
+.recruit-infoBox-title {
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.recruit-infoBox-firstInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.recruit-infoBox-firstInfo .infoBox-carrer,
+.infoBox-emp {
+  width: 50%;
+}
+
+.recruit-infoBox-firstInfo .infoBox-emp {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.recruit-infoBox-firstInfo .infoBox-carrer {
+  padding-left: 10px;
+}
+
+.recruit-infoBox-secondInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.recruit-infoBox-secondInfo .infoBox-startDate,
+.infoBox-bookmark {
+  width: 50%;
+}
+
+.recruit-infoBox-secondInfo .infoBox-startDate {
+  padding-left: 10px;
+}
+
+.recruit-infoBox-secondInfo .infoBox-bookmark {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.recruit-infoBox-progress-btn {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.recruit-infoBox-progress-btn .no-btn {
+  padding: 5px 15px 5px 15px;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.red-btn {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 5px 15px 5px 15px;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+}
