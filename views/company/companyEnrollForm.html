@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/companyEnrollForm.css" />
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="left__header">
+        <div class="logo">
+          <img src="../../assets/logo.png" alt="logo" />
+        </div>
+        <ul class="header__nav">
+          <li class="header__nav-item">PARTNER</li>
+          <li class="header__nav-item">COMPANY</li>
+          <li class="header__nav-item">EMPLOYMENT</li>
+        </ul>
+      </div>
+      <div class="right__header">
+        <i class="material-icons">menu</i>
+        <span>MENU</span>
+      </div>
+    </div>
+  </header>
+  <main class="content__section">
+    <div class="inner">
+      <div class="section__title">
+        <span>기업등록</span>
+      </div>
+      <div class="main__main__section">
+        <div class="main__section__content">
+          <div class="content__wrapper">
+            <div class="section__compLogo">
+              <div class="avatar__company">
+                <img src="../../assets/avatar.png" alt=""/>  
+              </div>
+              <div class="main__info">
+                <strong>로고</strong>
+                <input hidden type="file" id="companyLogo">
+                <label class="btn__attachment" for="companyLogo">찾아보기</label>
+                <strong>설립일</strong>
+                <input type="text" name="compBirth" placeholder="ex) 2012-11-11">
+              </div>  
+            </div>
+          </div>
+
+
+          <div class="content__wrapper">
+            <div class="section__compName">
+              <strong>기업명</strong>
+              <input type="text" name="compName" placeholder="COMPANY">
+              <span>허위기업이나 기업이름이 중복될 경우 경고없이 삭제될 수 있습니다.</span>
+            </div>
+          </div>
+          <div class="content__wrapper">
+            <div class="section__main">
+              <strong>주요업무</strong> <!--techstack table -->
+              <input type="text" name="skillName" placeholder=" 주요업무를 입력해주세요">
+            </div>
+          </div>
+          <div class="content__wrapper">
+             <div class="section__main">
+               <strong>기업소개</strong>
+               <input type="text" name="compInfo" placeholder=" 기업을 소개해주세요">
+             </div>
+             
+            
+          </div>
+          <div class="content__wrapper">
+            <strong>산업분야</strong>
+            <div class="section__compindus">
+              <input type="checkbox" id="webservice" name="compindus" value="웹서비스">
+              <label for="webservice">웹서비스</label> 
+              <input type="checkbox" id="mobile" name="compindus" value="모바일"> 
+              <label for="mobile">모바일</label>
+              <input type="checkbox" id="E-service" name="compindus" value="E-service"> 
+              <label for="E-service">E-service</label>
+              <input type="checkbox" id="IoT" name="compindus" value="IoT"> 
+              <label for="IoT">IoT</label>
+              <input type="checkbox" id="o2o" name="compindus" value="o2o"> 
+              <label for="o2o">o2o</label>
+              <input type="checkbox" id="fintech" name="compindus" value="fintech"> 
+              <label for="fintech">핀테크</label>
+            </div>   
+          </div>
+          <div class="content__wrapper">
+            <div class="section__techstack">
+              <strong>테크스택</strong>
+              <span>FRONT-END</span>
+              <input type="text">
+              <div class="section__techstack__btn">
+                <button class="techstack__btn">Node.js</button>
+                <button class="techstack__btn">Express.js</button>
+                <button class="techstack__btn">Deno</button>
+              </div>
+              <span>BACK-END</span>
+              <input type="text">
+              <div class="section__techstack__btn">
+                <button class="techstack__btn">Node.js</button>
+                <button class="techstack__btn">Express.js</button>
+                <button class="techstack__btn">Deno</button>
+              </div>
+              <span>DEV-OPS</span>
+              <input type="text">
+              <div class="section__techstack__btn">
+                <button class="techstack__btn">Node.js</button>
+                <button class="techstack__btn">Express.js</button>
+                <button class="techstack__btn">Deno</button>
+              </div>
+            </div>
+           
+          </div>
+                <div class="content__wrapper">
+                  <div class="section__compEmail">
+                    <strong>기업 이메일</strong>
+                    <input type="text" name="compEmail" placeholder="ex) company@gmail.com">
+                  </div>
+                </div>
+                <div class="content__wrapper">
+                  <strong>구성원</strong>
+                </div>
+          <div class="content__wrapper">
+            <div class="section__compAddress">
+              <strong>기업주소</strong>
+              <input type="text" name="compAddress">
+            </div>
+          </div>
+        </div>
+        <div class="main__section__aside">
+           <div class="content__wrapper">
+              <div class="aside__toggle">
+                <i class='fas fa-toggle-on' style='font-size:24px'></i>
+                <label class="aside__toggle-name"for="">로고/설립일</label>
+              </div>
+              <div class="aside__toggle">
+                <i class='fas fa-toggle-off' style='font-size:24px'></i>
+                <label class="aside__toggle-name"for="">기업명</label>
+              </div>
+              <div class="aside__toggle">
+                <i class='fas fa-toggle-off' style='font-size:24px'></i>
+                <label class="aside__toggle-name"for="">주요업무</label>
+              </div>
+              <div class="aside__toggle">
+                <i class='fas fa-toggle-off' style='font-size:24px'></i>
+                <label class="aside__toggle-name"for="">기업소개</label>
+              </div>
+              <div class="aside__toggle">
+                <i class='fas fa-toggle-off' style='font-size:24px'></i>
+                <label class="aside__toggle-name"for="">산업분야</label>
+              </div>
+              <div class="aside__toggle">
+                <i class='fas fa-toggle-off' style='font-size:24px'></i>
+                <label class="aside__toggle-name"for="">테크스택</label>
+              </div>
+              <div class="aside__toggle">
+                <i class='fas fa-toggle-off' style='font-size:24px'></i>
+                <label class="aside__toggle-name"for="">이메일</label>
+              </div>
+              <div class="aside__toggle">
+                <i class='fas fa-toggle-off' style='font-size:24px'></i>
+                <label class="aside__toggle-name"for="">구성원</label>
+              </div>
+              <div class="aside__toggle">
+                <i class='fas fa-toggle-off' style='font-size:24px'></i>
+                <label class="aside__toggle-name"for="">주소</label>
+              </div>        
+              <button class="btn "type="submit">기업등록</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    
+</body>
+</html>
