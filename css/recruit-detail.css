@@ -65,7 +65,7 @@
 .recruit__content {
   width: 100%;
   padding: 25px 30px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 5px;
   border: 1px solid #c7c7c7;
   box-sizing: border-box;
@@ -114,7 +114,7 @@
   .recruit__content
   .recruit__content__techs
   span {
-  color: white;
+  color: #ffffff;
   border-radius: 30px;
   background-color: #30409f;
   height: 30px;
@@ -186,7 +186,7 @@
   .recruit__btns__wrapper
   .item1
   button {
-  background: white;
+  background: #ffffff;
   color: #30409f;
   border-color: #30409f;
   border-radius: 3px;

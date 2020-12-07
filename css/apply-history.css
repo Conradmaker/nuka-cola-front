@@ -1,0 +1,178 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.apply-history__main-wrapper {
+  margin-top: 30px;
+  background-color: #f7fbff;
+  height: 100%;
+}
+
+.apply-history__main-wrapper .inner {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+}
+.apply-history__main-wrapper .apply-history__title {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.apply-history__main-wrapper .apply-history__title strong {
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.apply-history__main-wrapper .apply-history__contents {
+  display: flex;
+  line-height: 25px;
+  gap: 30px;
+}
+
+.apply-history__contents .apply-history__left-sidebar {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-history__contents .left-sidebar__item {
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #c7c7c7;
+}
+.apply-history__contents .left-sidebar__item span:hover,
+.apply-history__contents .left-sidebar__item a:hover {
+  color: #30409f;
+  font-weight: bold;
+}
+.apply-history__contents .left-sideber__viewing {
+  color: #30409f;
+  font-weight: bold;
+}
+
+.apply-history__contents .apply-history__right-content {
+  flex: 7.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-history__contents .apply-history__sub-title {
+  flex: 2;
+  color: #707070;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.apply-history__contents .apply-history__list {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.apply-history__right-content .apply-info {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c7c7c7;
+  background: #ffffff;
+  border-radius: 3px;
+  justify-content: space-between;
+  padding: 30px;
+}
+.apply-history__list .apply-info__content {
+  transition: all 0.3s;
+  border-radius: 5px;
+  padding: 10px;
+}
+.apply-history__list .apply-info__content:hover {
+  background-color: #c7c7c7;
+  cursor: pointer;
+}
+.apply-info__content .recruit-stage {
+  display: flex;
+  align-items: center;
+}
+.state-sign {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+/*서류 접수*/
+.submit-state {
+  background: rgb(241, 196, 15);
+}
+/*탈락*/
+.fail-state {
+  background: rgb(231, 76, 60);
+}
+/*서류 합격*/
+.pass-state {
+  background: #6374e8;
+}
+/*팀 합류*/
+.join-state {
+  background: #30409f;
+}
+.apply-history__right-content .apply-info__btn {
+  flex: 3;
+  margin-left: 10px;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.apply-history__right-content button {
+  height: 40px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.3s;
+  outline: none;
+}
+.apply-history__right-content button:hover {
+  cursor: pointer;
+  animation: fadeIn 0.3s linear;
+}
+.apply-history__right-content .apply-cancel__btn {
+  background-color: rgb(231, 76, 60);
+  color: #ffffff;
+}
+.apply-history__right-content .apply-detail__btn {
+  border: 1px solid #c7c7c7;
+  background-color: #ffffff;
+}
+.apply-history__right-content .apply-info__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.apply-info .apply-info__recruit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.apply-info .apply-info__recruit-info span:first-child {
+  font-size: 18px;
+}
+.apply-info .apply-info__recruit-info span:nth-child(2) {
+  color: #707070;
+}
+.apply-info .apply-info__apply-state {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+.apply-info .apply-info__apply-state div:first-child {
+  font-weight: bold;
+}
+.apply-info .apply-info__apply-state div + span:nth-child(2) {
+  color: rgb(231, 76, 60);
+}
+.apply-info .apply-state__apply-date {
+  color: #707070;
+}
