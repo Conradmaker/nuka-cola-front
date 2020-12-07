@@ -3,7 +3,7 @@
     margin-top: 60px;
     padding-top:0px;
     background: #f7fbff;
-
+    height: 60px;
   }
 .btn-blue{
     width: 140px;
@@ -101,6 +101,7 @@ section .connection__right{
 .circle span{}
 .partner__main{
     background-color:#f7fbff;
+    padding-bottom: 20px;
 
 }
 
@@ -146,6 +147,13 @@ section .connection__right{
     width:400px;
     height:30px;
 }
+.keyword input::-ms-clear {
+    display: none;
+}
+
+
+
+
 .keyword input:focus{
     outline: none;
 }
@@ -193,6 +201,9 @@ section .connection__right{
     height:18px;
     background-color: #30409f;
     background-size:contain;
+}
+.result_tag .tag:hover{
+    cursor: pointer;
 }
 .tag span{
     font-size: 14px;
