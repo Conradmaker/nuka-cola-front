@@ -1,3 +1,4 @@
+
 .content__section {
     margin-top: 60px;
     padding-top:0px;
@@ -98,10 +99,11 @@ section .connection__right{
 
 }
 .circle span{}
-/* .partner__main{
+.partner__main{
     background-color:#f7fbff;
 
-} */
+}
+
 .partner__main .inner{
     /* background-color:#f7fbff; */
     /* border: #000 solid; */
@@ -119,7 +121,7 @@ section .connection__right{
     top:-35px;
     box-shadow: 3px 3px 2px #848484;
     background-color: #fff;
-    /* border: #000 solid; */
+    border:#848484 1px solid;
     border-radius: 30px;
 }
 .search__form select{
@@ -128,19 +130,35 @@ section .connection__right{
 }
 .search__form input{
     width:200px;
-    height:30px;
+    height:32px;
 }
 .keyword{
+    display: flex;
+    align-items: center;
+    width:425px;
+    height:35px;
+    border: solid 1px #848484;
     margin-bottom: 10px;
 }
 .keyword input{
+    margin-left: 5px;
+    border: none;
     width:400px;
     height:30px;
+}
+.keyword input:focus{
+    outline: none;
+}
+.keyword button{
+    background: none;
+    border: none;
+    outline: none;
 }
 .inner .popular{
     max-width: 1000px;
     margin: 10px auto;
     padding:40px;
+    border:1px solid #848484;
     box-shadow: 3px 3px 2px #848484;
     background-color: #fff;
     border-radius: 30px;
@@ -152,26 +170,42 @@ section .connection__right{
 .partner_search .result_tag{
     width:100%;
     height:50px;
+    padding:5px;
     border: #000 1px solid;
     display: flex;
     flex-wrap: wrap;
-    /* gap: 10px; */
+    gap: 10px;
 
 }
-.result_tag .tag::before{
-    content:"자바";
-    width:100px;
-    height:20px;
-    color:#fff;
-    background:#30409f;
+.material-icons.md-18{
+    font-size: 10px;
 }
-.result_tag .tag:hover:after{
+.material-icons.md-light{
+    color:#fff;
+}
+.result_tag .tag{
+    display: flex;
+    gap:5px;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 5px;
+    margin-bottom:5px;
+    height:18px;
+    background-color: #30409f;
+    background-size:contain;
+}
+.tag span{
+    font-size: 14px;
+    color:#fff;
+
+}
+/* .result_tag .tag:hover:after{
     content:close;
     width:100px;
     height:20px;
     color:#fff;
     background:#30409f;
-}
+} */
 
 .connecting_people, .popular_people{
     /* border:solid #000; */
@@ -192,6 +226,26 @@ h3{
     font-size: 14px;
     color:#707070
 }
+.connecting_people .result_none{
+    padding:20px 0px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background:#C7C7C7;
+}
+.result_none .result_none_text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: solid black 1px; */
+    align-items: center;
+    gap:15px;
+
+}
+.material-icons.md-48{
+    font-size: 50px;
+}
+
 .connecting_people .search_result, .popular_people .search_result{
     margin-bottom:5px;
     padding:10px;

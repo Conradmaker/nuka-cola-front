@@ -93,11 +93,22 @@
                 </div>
                 <div class="keyword">
                   <input type="search" placeholder="검색어를 입력해주세요.">
+
+                  <button type="submit">
+                    <i class="material-icons">search</i>
+                  </button>
+
                 </div>
               </form>
               <div class="result_tag">
-                <div class="tag__left"></div>
-                <div><i class="material-icons">close</i></div>
+                <div class="tag">
+                  <span>자바</span>
+                  <i class="material-icons md-18 md-light">close</i>
+                </div>
+                <div class="tag">
+                  <span>기획자</span>
+                  <i class="material-icons md-18 md-light">close</i>
+                </div>
               </div>
             
               <div class="connecting_people">
@@ -105,8 +116,17 @@
                   <h2>나와 연결된 사람들</h2>
                 </div>
                 <h3>검색결과 (30)</h3>
+                  <!-- 연결된 사람이 없는 경우 if문-->
+                  <!-- <div class="result_none">
+                    <ul class="result_none_text">
+                      <li><i class="material-icons md-48">search_off</i></li>
+                      <li>나와 연관된 사람들이 없습니다.</li>
+                    </ul>
+                  </div> -->
+                  <!-- if문 -->
                 <!-- 나와 연결된 사람 결과 for문 -->
                 <div class="search_result">
+
                   <div class="result__left">
                     <div class="avatar">
                       <img src="../../assets/avatar.png" alt="" />
@@ -133,6 +153,14 @@
                   <h2>그 외</h2>
                 </div>
                 <h3>검색결과 (30)</h3>
+                <!-- 검색결과 없는경우  if문-->
+                <!-- <div class="result_none">
+                  <ul class="result_none_text">
+                    <li><i class="material-icons md-48">search_off</i></li>
+                    <li>검색결과가 없습니다.</li>
+                  </ul>
+                </div> -->
+                <!--if문  -->
                 <!-- 검색결과 for문 -->
                 <div class="search_result">
                   <div class="result__left">
@@ -185,7 +213,6 @@
                     <!-- <div class="subtitle">
                       <h2>인기 프로필</h2>
                     </div> -->
-                    <h3>검색결과 (30)</h3>
                     <!-- 인기프로필 for문 -->
                     <div class="search_result">
                       <div class="result__left">
@@ -202,6 +229,20 @@
                         <button class="btn">팔로우</button>
                       </div>
                     </div>  
+                    <div class="search_result">
+                      <div class="result__left">
+                        <div class="avatar">
+                          <img src="../../assets/avatar.png" alt="" />
+                        </div>
+                        <ul class="avatar__info">
+                          <li><strong>홍길동</strong></li>
+                          <li>MicroSoft, ceo</li>
+                          <li>기획자</li>
+                        </ul>
+                      </div>
+                      <div class="result__right">
+                        <button class="btn">팔로우</button>
+                      </div>
                     <!-- for문 -->
                   </div>
                 </div>
