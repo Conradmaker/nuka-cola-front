@@ -1,8 +1,14 @@
 .visual__section{
     margin-top:60px;
 }
-.content__wrapper{
-    border:solid black 1px;
+.content__wrapper {
+  width: 100%;
+  padding: 25px 30px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 .main__section__left {
     flex: 2;
@@ -69,7 +75,7 @@
  }
  .main_character__left h2,.main_character__right h2,  .member h2{
      color:#000;
-     font-size: 18px;
+     font-size: 16px;
      font-weight: bold;
      margin-bottom: 10px;
  }
