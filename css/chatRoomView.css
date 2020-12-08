@@ -1,0 +1,228 @@
+body {
+  background: #f7fbff;
+}
+
+div {
+  /* border: 1px solid red; */
+}
+
+.inner {
+  display: flex;
+  gap: 10px;
+}
+
+.inner .section__left,
+.inner .section__right {
+  flex: 3;
+  border: 1px solid #c7c7c7;
+  background: #ffffff;
+}
+
+.inner .section__mid {
+  flex: 4;
+  border: 1px solid #c7c7c7;
+}
+
+.section__left .section__left__messageInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.section__left__messageInfo .left__messageTitle {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left__messageTitle strong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.section__left__messageInfo .left__messageIcon {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left__messageIcon img {
+  width: 80%;
+}
+
+.section__left__userInfos {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__left__userInfo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.section__left__userInfo .left__userIcon {
+  width: 30%;
+}
+
+.left__userIcon img {
+  width: 100%;
+}
+
+.section__left__userInfo .left__userDetailInfo {
+  width: 70%;
+}
+
+.left__userDetailInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+  gap: 20px;
+}
+
+.left__userDetailInfo .left__userName strong {
+  padding-left: 10px;
+}
+
+.left__userDetailInfo .left__userChat {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.left__userChat-sum span {
+  flex: 7;
+  font-size: 15px;
+}
+
+.left__userChat-time span {
+  flex: 3;
+  font-size: 12px;
+}
+
+.section__mid__time {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.section__mid__time strong {
+  display: flex;
+  justify-content: center;
+}
+
+.section__mid__message-multiBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mid__right-messageBox {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  padding-left: 10px;
+}
+
+.right-messageBox-date {
+  font-size: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 50px;
+}
+
+.mid__right-messageBox .right-messageBox-text {
+  background: #30409f;
+  color: #ffffff;
+  width: 250px;
+  height: 90px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mid__left-messageBox {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.mid__left-messageBox .left-messageBox-text {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 250px;
+  height: 90px;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10px;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.left-messageBox-date {
+  font-size: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50px;
+}
+
+.section__mid__message-writingBox {
+  margin-top: 10px;
+  width: 420px;
+  height: 150px;
+}
+
+.section__mid__message-writingBox .mid__message-writingBox {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  margin-left: 5px;
+}
+
+.section__mid__mesage-sendBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 6px;
+  margin-bottom: 5px;
+}
+
+.section__right .section__right__userProfile {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__right__userProfile .right__userProfile-img {
+  width: 150px;
+  margin-left: 80px;
+}
+
+.right__userProfile-img img {
+  width: 100%;
+}
+
+.section__right strong {
+  display: flex;
+  justify-content: center;
+}
+
+.right__userProfile__carrer {
+  border-bottom: 1px solid #c7c7c7;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  margin-left: 3px;
+  margin-right: 3px;
+}
