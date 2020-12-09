@@ -127,12 +127,14 @@ header .left__header {
   align-items: center;
   gap: 30px;
 }
+
 .header__nav li {
   cursor: pointer;
 }
 .header__nav li:hover {
   font-weight: bold;
 }
+
 header .right__header {
   display: flex;
   align-items: center;
@@ -217,16 +219,12 @@ header .right__header {
   font-weight: bold;
 }
 
-.visual__section .inner .visual__right {
-}
 .content__section {
   padding-top: 100px;
   background: #f7fbff;
-  height: 1000px;
+  height: 1800px;
 }
 
-.content__section .inner {
-}
 .content__section .section__title {
   border-bottom: 1px solid #707070;
   margin-bottom: 20px;

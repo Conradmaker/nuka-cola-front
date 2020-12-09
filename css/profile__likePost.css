@@ -1,0 +1,79 @@
+.like__item-container {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.like__item-container .item__box {
+  width: 48%;
+  border: 1px solid rgb(228, 228, 228);
+  box-shadow: 0 2px 4px rgb(194, 200, 206);
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.item__box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 8px rgb(194, 200, 206);
+}
+.item__box .img__wrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e5e5;
+}
+.item__box .user_profile {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.item__box .user_profile .user__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgb(196, 196, 196);
+  margin-right: 10px;
+}
+.user_profile .user__avatar img {
+  width: 100%;
+  height: 100%;
+}
+.user_profile .user__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.user_profile .user__info b {
+  font-weight: bold;
+}
+.user_profile .user__info span {
+  font-size: 13px;
+}
+.item__box .img__wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.item__box .content__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.item__box .content__box p {
+  flex: 1;
+}
+.item__box:hover .content__box span {
+  opacity: 1;
+}
+.item__box .content__box span {
+  opacity: 0;
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 14px;
+  color: rgb(151, 76, 76);
+}

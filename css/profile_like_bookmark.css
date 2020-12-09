@@ -1,0 +1,351 @@
+.visual__section {
+  background: #30409f;
+  height: 160px;
+  margin-top: 70px;
+}
+.visual__section .inner {
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.visual__section .inner button {
+  margin-top: 100px;
+}
+.visual__section .inner .visual__left {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 40px;
+}
+.visual__left .avatar {
+  margin-right: 50px;
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0px 5px gray;
+  position: relative;
+}
+
+.avatar img {
+  width: 99%;
+  height: 99%;
+  border: 1px solid #e5e5e5;
+}
+.avatar h1 {
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+.avatar:hover h1 {
+  opacity: 1;
+}
+.visual__left .main__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+  margin-bottom: 30px;
+}
+.main__info strong {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.visual__left .people__info {
+  display: flex;
+  gap: 30px;
+}
+.people__info li {
+  font-size: 14px;
+  color: #000;
+}
+.people__info li strong {
+  font-weight: bold;
+}
+
+.main__main__section {
+  display: flex;
+  gap: 20px;
+}
+.main__section__left {
+  flex: 2;
+  position: relative;
+  height: 100%;
+}
+.main__section__right {
+  flex: 6;
+}
+.main__section__left .content__wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main__section__left .content__wrapper li {
+  list-style: none;
+  margin: 5px;
+}
+
+.content__wrapper .left__info {
+  gap: 20px;
+  font-size: 14px;
+  color: #000;
+}
+.content__wrapper .left__info li {
+  height: 30px;
+  padding: 10px;
+  margin-left: 2px;
+  transition: all 0.3s;
+}
+.content__wrapper .left__info li:hover {
+  background: #e5e5e5;
+  cursor: pointer;
+}
+.content__wrapper strong {
+  font-size: 16px;
+  font-weight: bold;
+}
+.main__section__left .content__wrapper {
+  border-left: 15px solid #575db4;
+}
+
+.content__wrapper .just__text {
+  line-height: 200%;
+}
+.main__section__right .content__wrapper__kinds {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  padding: 13px 13px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.section__content__title .edit__field {
+  margin-left: 10px;
+  position: relative;
+  bottom: 5px;
+  margin-bottom: 10px;
+}
+.content__wrapper .section__content__title {
+  display: flex;
+  flex-direction: row;
+}
+.content__wrapper .techstack__sort {
+  font-size: 16px;
+  color: #707070;
+}
+.content__wrapper .section__content__box {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.section__content__box .compindus__box,
+.back-end__box {
+  padding: 3px 15px 5px;
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 16px;
+  background-color: #30409f;
+  color: #fff;
+}
+.section__content__box .front-end__box {
+  padding: 2px 15px 5px;
+  height: 30px;
+  border-radius: 16px;
+  background-color: #575db4;
+  color: #fff;
+}
+.section__content__box .dev-ops__box {
+  padding: 2px 15px 5px;
+  height: 30px;
+  border-radius: 16px;
+  background-color: #eaecff;
+  color: #30409f;
+}
+.content__wrapper .content__profile .circle {
+  background-color: gray;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #00d3d3;
+  font-size: 12px;
+  text-align: center;
+  line-height: 200px;
+  border: 1px solid rgb(248, 254, 255);
+  box-shadow: 0 0 4px rgb(221, 221, 221);
+  font-weight: bold;
+}
+.content__wrapper .content__profile {
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.content__wrapper .section__member {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.content__wrapper .section__more-member {
+  position: relative;
+  left: 300px;
+}
+.content__wrapper .just__text {
+  font-size: 14px;
+}
+
+.section__content__text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  line-height: 150%;
+  gap: 10px;
+}
+.main__section__right .content__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.content__wrapper .just__text {
+  font-size: 12px;
+  margin-top: 3px;
+}
+.content__wrapper .just__text__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 10px;
+  gap: 8px;
+}
+.just__text__item .just__text__title {
+  font-size: 12px;
+}
+.just__text__item .just__text__content strong {
+  font-size: 14px;
+}
+.just__text__item .just__text__recruit {
+  font-size: 12px;
+}
+.content__wrapper .section__content__box {
+  position: relative;
+  top: 0px;
+}
+.main__section__right .content__wrapper {
+  height: 1000px;
+}
+.section__content__title__cencle {
+  display: flex;
+  justify-content: flex-end;
+  color: #9b0404;
+  position: relative;
+  bottom: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.section__content__title__cencle:hover {
+  color: #410202;
+}
+.sysdate {
+  font-size: 8px;
+  height: 50px;
+  margin-top: 5px;
+  color: rgba(3, 3, 3, 3);
+}
+
+.content__wrapper .just__text {
+  border-bottom: 1px solid #eeeeee;
+}
+
+/*아이콘 줄여주는거 */
+.material-icons {
+  color: #e2e5ff;
+  transform: scale(0.8);
+  opacity: 1;
+}
+.material-icons:hover {
+  color: #011063;
+  cursor: pointer;
+}
+.content__wrapper .section__member p,
+strong {
+  font-size: 12px;
+}
+
+.content__profile .content__introduce {
+  position: relative;
+  left: 13px;
+  top: 2px;
+  line-height: 150%;
+}
+.content__wrapper .content__profile {
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+  margin-left: 30px;
+}
+.section__member .content__profile + .content__profile {
+  border-left: 1px solid #e7e7e7;
+}
+.content__wrapper .section__member {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-end;
+  margin-left: 5%;
+}
+
+#my_modal {
+  display: none;
+  width: 300px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+
+#my_modal .modal_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.icono-crossCircle {
+  transform: scale(0.1);
+}
+.icono-hamburger {
+  position: relative;
+  top: 3px;
+}
+a#topBtn {
+  position: fixed; /* 포지션 고정 */
+  right: 2%; /* 오른쪽에서 2% - %도 할수 있음*/
+  bottom: 5px; /* 밑에서 5px */
+  display: none; /* 보여지지 없음 - 기본적으로 안보여지게 */
+  z-index: 9999; /* 포지션을 먼저 지정후 z-좌표(레이어) : 9999입니다. */
+}
+#logoDesign {
+  transform: scale(1);
+}

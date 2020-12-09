@@ -1,0 +1,284 @@
+.visual__section {
+  background: #30409f;
+  height: 160px;
+  margin-top: 70px;
+}
+.visual__section .inner {
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.visual__section .inner button {
+  margin-top: 100px;
+}
+.visual__section .inner .visual__left {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 40px;
+}
+.visual__left .avatar {
+  margin-right: 50px;
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0px 5px gray;
+  position: relative;
+}
+
+.avatar img {
+  width: 99%;
+  height: 99%;
+  border: 1px solid #e5e5e5;
+}
+.avatar h1 {
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+.avatar:hover h1 {
+  opacity: 1;
+}
+.visual__left .main__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+  margin-bottom: 30px;
+}
+.main__info strong {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.content__wrapper strong {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.content__wrapper .just__text {
+  line-height: 200%;
+}
+
+.section__content__title .edit__field {
+  display: flex;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 5px;
+}
+
+.content__wrapper .techstack__sort {
+  font-size: 16px;
+  color: #707070;
+}
+
+.content__wrapper .circle {
+  background-color: gray;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  line-height: 200px;
+  border: 1px solid rgb(248, 254, 255);
+  box-shadow: 0 0 4px rgb(221, 221, 221);
+  font-weight: bold;
+}
+.content__wrapper .content__profile {
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.content__wrapper .section__member {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.content__wrapper .section__more-member {
+  position: relative;
+  left: 300px;
+}
+.content__wrapper .just__text {
+  font-size: 14px;
+}
+
+.section__content__text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  line-height: 150%;
+  gap: 10px;
+}
+/* 박스크기 */
+.content__section .content__wrapper {
+  height: 350px;
+}
+.content__wrapper .section__content__title {
+  display: flex;
+  justify-content: flex-start;
+  height: 20%;
+  width: 60%;
+}
+.section__content__title .content__introduce {
+  position: relative;
+  top: 3px;
+  left: 15px;
+  line-height: 150%;
+}
+.content__wrapper .just__text__dv {
+  width: 85%;
+  margin-top: 15px;
+}
+
+.content__wrapper .content__editandDelete {
+  position: relative;
+  left: 105%;
+}
+
+.content__wrapper .section__content__right {
+  position: relative;
+  top: 15px;
+}
+/* 코멘트박스 */
+.content__wrapper .content__comment {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  top: 30px;
+  width: 30%;
+  height: 25%;
+}
+.content__wrapper .content__comment p {
+  color: #e2e5ff;
+}
+/* 날짜 */
+.content__wrapper .sysdate {
+  font-size: 12px;
+  position: relative;
+  top: 5px;
+  color: #b6b6b6;
+}
+
+/* 코멘트 호버 */
+.content__wrapper .content__comment p:hover {
+  cursor: pointer;
+  color: #060218;
+}
+/* 아이콘 호버 */
+.icono-comment:hover {
+  cursor: pointer;
+  color: #060218;
+}
+.material-icons:hover {
+  color: #011063;
+  cursor: pointer;
+}
+.fa-heart:hover {
+  color: rgb(216, 92, 92);
+  cursor: pointer;
+}
+/*아이콘 */
+.icono-comment {
+  transform: scale(0.8);
+  position: relative;
+  color: #e2e5ff;
+  top: 10px;
+  right: 5px;
+  border: 0.5px solid rgb(255, 255, 255);
+}
+.fa-heart {
+  position: relative;
+  left: 5px;
+  color: #e2e5ff;
+}
+.material-icons {
+  color: #e2e5ff;
+  transform: scale(0.8);
+  opacity: 1;
+}
+/* 버튼 css */
+.content__wrapper .content__editandDelete .btn-red {
+  color: #ffffff;
+  background-color: #a12d67;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid rgb(221, 221, 221);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 70%;
+  padding: 5px;
+  width: 80px;
+}
+.content__wrapper .content__editandDelete .btn-green {
+  color: #1d1d1d;
+  background-color: #ffffff;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid rgb(221, 221, 221);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 70%;
+  padding: 5px;
+  width: 80px;
+}
+.content__wrapper .content__editandDelete .btn-green:hover {
+  color: #d5d8ff;
+  background-color: #30409f;
+}
+.content__wrapper .content__editandDelete .btn-red:hover {
+  color: #252525;
+  background-color: #ffffff;
+}
+
+/* 자바크스립트 스타일입니다 */
+#my_modal {
+  display: none;
+  width: 300px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+
+#my_modal .modal_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.icono-crossCircle {
+  transform: scale(0.1);
+}
+.icono-hamburger {
+  position: relative;
+  top: 3px;
+}
+a#topBtn {
+  position: fixed; /* 포지션 고정 */
+  right: 2%; /* 오른쪽에서 2% - %도 할수 있음*/
+  bottom: 5px; /* 밑에서 5px */
+  display: none; /* 보여지지 없음 - 기본적으로 안보여지게 */
+  z-index: 9999; /* 포지션을 먼저 지정후 z-좌표(레이어) : 9999입니다. */
+}
+#logoDesign {
+  transform: scale(0.5);
+}
