@@ -1,0 +1,195 @@
+
+  .content__wrapper {
+    border-radius: 10px;
+  }
+  .content__section {
+    padding-top: 100px;
+    background: #f7fbff;
+  }
+
+  .section__title ul {
+    margin: 0 20px;
+    display: flex;
+    gap: 30px;
+  }
+  .section__title li {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+  .section__title .nav-active {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  
+  .main__main__section {
+    display: flex;
+    gap: 20px;
+  }
+  .main__section__right {
+    flex: 6;
+  }
+  .main__section__left {
+    flex: 2;
+    position: relative;
+    height: 100%;
+  }
+ 
+  .main__section__left .content__wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main__section__left .content__wrapper li {
+    list-style: none;
+    margin: 5px;
+  }
+  
+  .content__wrapper .left__info {
+    gap: 20px;
+    font-size: 14px;
+    color: #000;
+  }
+  .content__wrapper .left__info li {
+    height: 30px;
+    padding: 10px;
+    margin-left: 2px;
+    transition: all 0.3s;
+  }
+  .content__wrapper .left__info li:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+  }
+  .content__wrapper strong {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .main__main__section .main__section__right .content__wrapper {
+    height: 1000px;
+  }
+  
+  .main__section__right .content__wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 25px 30px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  .content__wrapper .content__title ul li {
+    margin: 10px;
+    padding: 1px;
+  }
+  .content__title ul li strong {
+    font-size: 22px;
+  }
+  .content__wrapper .content__profile .circle {
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #00d3d3;
+    font-size: 12px;
+    text-align: center;
+    line-height: 200px;
+    border: 1px solid rgb(248, 254, 255);
+    box-shadow: 0 0 4px rgb(221, 221, 221);
+    font-weight: bold;
+    background: url(../resource/images/500_369381_1542099704.jpeg) center 100%
+      no-repeat;
+  }
+  
+  .content__wrapper .content__profile {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .content__profile .content__introduce {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    position: relative;
+    top: 3px;
+    left: 15px;
+    width: 40%;
+  }
+  .content__introduce strong {
+    font-size: 16px;
+    text-align: center;
+  }
+  .content__wrapper {
+    border-left: 15px solid #575db4;
+  }
+  .content__profile .content__other {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 60%;
+    gap: 20px;
+    height: 100px;
+  }
+  .content__profile + .content__profile {
+    border-top: 1px solid #bcbcbc;
+    position: relative;
+  }
+  .main__section__right .content__wrapper:after {
+
+  }
+  
+  .content__profile .content__other {
+    font-size: 14px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+  }
+
+  .content__wrapper .script__company__box{
+    display: flex;
+    padding: 5px 0px;
+    justify-content: space-between;
+    border-bottom: solid 1px #c7c7c7;
+  }
+  .script__company__box .company__box__left{
+    flex:9;
+    padding-right: 10px;
+    overflow: hidden;
+    border: solid #000;
+    display: flex;
+    align-items: center;
+    gap:10px;
+  }
+  .company__box__left .company__img__box{
+      width: 140px;
+      height:140px;
+      background: #c7c7c7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .company__img__box img{
+      width:98%;
+      height: 98%;
+      
+  }
+  .script__company__box .company__box__right{
+    flex:1;
+    display: flex;
+    flex-direction: row-reverse;
+    border: solid #000;
+  }
+  .company__box__right span{
+   
+      color:red;
+      font-size: 14px;
+  }
