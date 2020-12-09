@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -16,315 +16,341 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../css/common.css" />
-    <link rel="stylesheet" href="../../css/companyProfile-main.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="../../css/company.css" />
+  </head>
+  <body>
     <header>
-        <div class="inner">
-          <div class="left__header">
-            <div class="logo">
-              <img src="../../assets/logo.png" alt="logo" />
+      <div class="inner">
+        <div class="left__header">
+          <div class="logo">
+            <img src="../../assets/logo.png" alt="logo" />
+          </div>
+          <ul class="header__nav">
+            <li class="header__nav-item">PARTNER</li>
+            <li class="header__nav-item">COMPANY</li>
+            <li class="header__nav-item">EMPLOYMENT</li>
+          </ul>
+        </div>
+        <div class="right__header">
+          <i class="material-icons">menu</i>
+          <span>MENU</span>
+        </div>
+      </div>
+    </header>
+    <section class="visual__section">
+      <div class="inner">
+        <div class="visual__left">
+          <div class="avatar">
+            <img src="../../assets/moomin.jpg" alt="logo" />
+          </div>
+          <div>
+            <div class="main__info">
+              <strong>RIDI BOOKS</strong>
+              <span>Since 2017</span>
+              <span>1003 명의 구성원</span>
+              <span>Bookstore@gmail.com</span>
             </div>
-            <ul class="header__nav">
-              <li class="header__nav-item">PARTNER</li>
-              <li class="header__nav-item">COMPANY</li>
-              <li class="header__nav-item">EMPLOYMENT</li>
+            <ul class="people__info">
+              <li>팔로우 <strong>102</strong></li>
+              <li>채용중인글 <strong>3</strong></li>
             </ul>
           </div>
-          <div class="right__header">
-            <i class="material-icons">menu</i>
-            <span>MENU</span>
-          </div>
         </div>
-    </header>
-      <section class="visual__section">
-        <div class="inner">
-          <div class="visual__left">
-            <div class="avatar">
-                <img src= "../../assets/moomin.jpg" alt="logo">
+        <button class="btn visual__right" id="add__member__open">
+          구성원 추가
+        </button>
+      </div>
+    </section>
+
+    <main class="content__section">
+      <div class="inner">
+        <div class="section__title">
+          <ul>
+            <li class="nav-active">ABOUT</li>
+            <li>채용</li>
+            <li>구성원</li>
+          </ul>
+        </div>
+        <div class="content__wrapper">
+          <div class="section__content__title">
+            <strong>기업 소개</strong>
+            <div class="edit__field">
+              <i class="material-icons">create</i>
             </div>
-            <div>
-              <div class="main__info">
-                <strong>RIDI BOOKS</strong>
-                <span>Since 2017</span>
-                <span>1003 명의 구성원</span>
-                <span>Bookstore@gmail.com</span>
-              </div>
-              <ul class="people__info">
-                <li>팔로우 <strong>102</strong></li>
-                <li>채용중인글 <strong>3</strong></li>
+          </div>
+          <span class="just__text">
+            안녕하세요? <br />
+            리디북스입니다^ㅡㅡ^
+          </span>
+        </div>
+        <div class="main__main__section">
+          <div class="main__section__left">
+            <div class="content__wrapper">
+              <ul class="left__info">
+                <li>TOP</li>
+                <li>기업소개</li>
+                <li><strong>산업분야</strong></li>
+                <li>테크스택</li>
+                <li>지역</li>
+                <li>구성원</li>
               </ul>
             </div>
           </div>
-          <button class="btn visual__right" id="add__member__open">구성원 추가</button>
-        </div>
-      </section>
-
-      <main class="content__section">
-          <div class="inner">
-              <div class="section__title">
-                  <ul>
-                      <li class="nav-active">ABOUT</li>
-                      <li>채용</li>
-                      <li>구성원</li>
-                  </ul>
+          <div class="main__section__right">
+            <div class="content__wrapper">
+              <div class="section__content__title">
+                <strong>산업분야</strong>
+                <div class="edit__field">
+                  <i class="material-icons">create</i>
+                </div>
               </div>
-              <div class="content__wrapper">
-                <div class="section__content__title">
-                    <strong>기업 소개</strong>
-                    <div class="edit__field">
-                        <i class="material-icons">create</i>
-                    </div>
-                </div>
-                <span class="just__text">
-                    안녕하세요? <br>
-                    리디북스입니다^ㅡㅡ^
-                </span>
-              </div>
-              <div class="main__main__section">
-                <div class="main__section__left">
-                    <div class="content__wrapper">
-                      <ul class="left__info">
-                        <li>TOP</li>
-                        <li>기업소개</li>
-                        <li><strong>산업분야</strong></li>
-                        <li>테크스택</li>
-                        <li>지역</li>
-                        <li>구성원</li>
-                      </ul>
-                    </div>
-                </div>
-                <div class="main__section__right">
-                    <div class="content__wrapper">
-                        <div class="section__content__title">
-                            <strong>산업분야</strong>
-                            <div class="edit__field">
-                                <i class="material-icons">create</i>
-                            </div>
-                        </div>
-                        <div class="section__content__box">
-                            <span class="compindus__box">웹서비스</span>
-                            <span class="compindus__box">머신런닝</span>
-                            <span class="compindus__box">핀테크</span>
-                        </div>
-                    </div>
-                    <div class="content__wrapper">
-                        <div class="section__content__title">
-                            <strong>테크스택</strong>
-                            <div class="edit__field">
-                                <i class="material-icons">create</i>
-                            </div>
-                        </div>
-                            <span class="techstack__sort">FRONT-END</span>
-                          <div class="section__content__box">
-                            <span class="front-end__box">Node.js</span>
-                            <span class="front-end__box">React.js</span>
-                            <span class="front-end__box">Redux</span>
-                            <span class="front-end__box">CSSinJS</span>
-                          </div>
-                            <span class="techstack__sort">BACK-END</span>
-                          <div class="section__content__box">
-                            <span class="back-end__box">Node.js</span>
-                            <span class="back-end__box">Express.js</span>
-                            <span class="back-end__box">MySQL</span>
-                          </div>
-                            <span class="techstack__sort">DEV_OPS</span>
-                          <div class="section__content__box">
-                            <span class="dev-ops__box">EC2</span>
-                            <span class="dev-ops__box">JEST</span>
-                            <span class="dev-ops__box">Docker</span>
-                          </div>
-                    </div>
-                    <div class="content__wrapper">
-                        <div class="section__content__title">
-                            <strong>지역</strong>
-                            <div class="edit__field">
-                                <i class="material-icons">create</i>
-                            </div>
-                        </div>
-                        <span class="just__text">
-                            서울시 서초구 누카빌딩 콜라센터1F
-                        </span>
-                    </div>
-                    <div class="content__wrapper">
-                        <div class="section__content__title">
-                            <strong>구성원</strong>
-                        </div>
-                        <div class="section__member">
-                            <div class="content__profile">
-                                <img class="circle" src="../../assets/juckerbug.jpg" alt="PROFILE">
-                                <div class="content__introduce">
-                                    <strong>Elon Reeve Musk</strong>
-                                    <p>데이터분석 @ 삼성전자</p>
-                                </div>
-                            </div>
-                            <div class="content__profile">
-                                <img class="circle" src="../../assets/juckerbug.jpg" alt="PROFILE">
-                                <div class="content__introduce">
-                                    <strong>Elonk</strong>
-                                    <p>데이터분석 @ 삼성전자</p>
-                                </div>
-                            </div>
-                            <div class="content__profile">
-                                <img class="circle" src="../../assets/juckerbug.jpg" alt="PROFILE">
-                                <div class="content__introduce">
-                                    <strong>Elon</strong>
-                                    <p>빅데이터 @ 삼성전자</p>
-                                </div>
-                            </div>
-                            <div class="content__profile">
-                                <img class="circle" src="../../assets/juckerbug.jpg" alt="PROFILE">
-                                <div class="content__introduce">
-                                    <strong>Elon Reeve Musk</strong>
-                                    <p>데이터분석 @ 삼성전자</p>
-                                </div>
-                            </div>
-                            <div class="content__profile">
-                                <img class="circle" src="../../assets/juckerbug.jpg" alt="PROFILE">
-                                <div class="content__introduce">
-                                    <strong>Elon Reeve Musk</strong>
-                                    <p>데이터분석 @ 삼성전자</p>
-                                </div>
-                            </div>
-                            <div class="content__profile">
-                                <img class="circle" src="../../assets/juckerbug.jpg" alt="PROFILE">
-                                <div class="content__introduce">
-                                    <strong>Elon Reeve Musk</strong>
-                                    <p>데이터분석 @ 삼성전자</p>
-                                </div>
-                            </div>
-                            <div class="content__profile">
-                                <img class="circle" src="../../assets/juckerbug.jpg" alt="PROFILE">
-                                <div class="content__introduce">
-                                    <strong>Elon Reeve Musk</strong>
-                                    <p>데이터분석 @ 삼성전자</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section__more-member">
-                          <button class="btn visual__right">MORE</button>
-                        </div>
-                    </div>
-                </div>
+              <div class="section__content__box">
+                <span class="compindus__box">웹서비스</span>
+                <span class="compindus__box">머신런닝</span>
+                <span class="compindus__box">핀테크</span>
               </div>
             </div>
-      </main>
+            <div class="content__wrapper">
+              <div class="section__content__title">
+                <strong>테크스택</strong>
+                <div class="edit__field">
+                  <i class="material-icons">create</i>
+                </div>
+              </div>
+              <span class="techstack__sort">FRONT-END</span>
+              <div class="section__content__box">
+                <span class="front-end__box">Node.js</span>
+                <span class="front-end__box">React.js</span>
+                <span class="front-end__box">Redux</span>
+                <span class="front-end__box">CSSinJS</span>
+              </div>
+              <span class="techstack__sort">BACK-END</span>
+              <div class="section__content__box">
+                <span class="back-end__box">Node.js</span>
+                <span class="back-end__box">Express.js</span>
+                <span class="back-end__box">MySQL</span>
+              </div>
+              <span class="techstack__sort">DEV_OPS</span>
+              <div class="section__content__box">
+                <span class="dev-ops__box">EC2</span>
+                <span class="dev-ops__box">JEST</span>
+                <span class="dev-ops__box">Docker</span>
+              </div>
+            </div>
+            <div class="content__wrapper">
+              <div class="section__content__title">
+                <strong>지역</strong>
+                <div class="edit__field">
+                  <i class="material-icons">create</i>
+                </div>
+              </div>
+              <span class="just__text">
+                서울시 서초구 누카빌딩 콜라센터1F
+              </span>
+            </div>
+            <div class="content__wrapper">
+              <div class="section__content__title">
+                <strong>구성원</strong>
+              </div>
+              <div class="section__member">
+                <div class="content__profile">
+                  <img
+                    class="circle"
+                    src="../../assets/juckerbug.jpg"
+                    alt="PROFILE"
+                  />
+                  <div class="content__introduce">
+                    <strong>Elon Reeve Musk</strong>
+                    <p>데이터분석 @ 삼성전자</p>
+                  </div>
+                </div>
+                <div class="content__profile">
+                  <img
+                    class="circle"
+                    src="../../assets/juckerbug.jpg"
+                    alt="PROFILE"
+                  />
+                  <div class="content__introduce">
+                    <strong>Elonk</strong>
+                    <p>데이터분석 @ 삼성전자</p>
+                  </div>
+                </div>
+                <div class="content__profile">
+                  <img
+                    class="circle"
+                    src="../../assets/juckerbug.jpg"
+                    alt="PROFILE"
+                  />
+                  <div class="content__introduce">
+                    <strong>Elon</strong>
+                    <p>빅데이터 @ 삼성전자</p>
+                  </div>
+                </div>
+                <div class="content__profile">
+                  <img
+                    class="circle"
+                    src="../../assets/juckerbug.jpg"
+                    alt="PROFILE"
+                  />
+                  <div class="content__introduce">
+                    <strong>Elon Reeve Musk</strong>
+                    <p>데이터분석 @ 삼성전자</p>
+                  </div>
+                </div>
+                <div class="content__profile">
+                  <img
+                    class="circle"
+                    src="../../assets/juckerbug.jpg"
+                    alt="PROFILE"
+                  />
+                  <div class="content__introduce">
+                    <strong>Elon Reeve Musk</strong>
+                    <p>데이터분석 @ 삼성전자</p>
+                  </div>
+                </div>
+                <div class="content__profile">
+                  <img
+                    class="circle"
+                    src="../../assets/juckerbug.jpg"
+                    alt="PROFILE"
+                  />
+                  <div class="content__introduce">
+                    <strong>Elon Reeve Musk</strong>
+                    <p>데이터분석 @ 삼성전자</p>
+                  </div>
+                </div>
+                <div class="content__profile">
+                  <img
+                    class="circle"
+                    src="../../assets/juckerbug.jpg"
+                    alt="PROFILE"
+                  />
+                  <div class="content__introduce">
+                    <strong>Elon Reeve Musk</strong>
+                    <p>데이터분석 @ 삼성전자</p>
+                  </div>
+                </div>
+              </div>
+              <div class="section__more-member">
+                <button class="btn visual__right">MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- 구성원 추가 모달 -->
     <div class="modal hidden" id="addMemberModal">
       <div class="modal__overlay"></div>
       <div class="modal__content">
-          <form class="content__inner">
-              <div class="modal__title">
-                  <h2>구성원 추가</h2>
+        <form class="content__inner">
+          <div class="modal__title">
+            <h2>구성원 추가</h2>
+          </div>
+          <div class="email">
+            <p>이메일</p>
+            <input type="search" />
+          </div>
+          <div class="modal__member__content">
+            <div class="charater__info">
+              <div class="charater__info__left">
+                <div class="member__avatar">
+                  <img src="../../assets/avatar.png" alt="" />
+                </div>
+                <label for="add_option" class="add__member__check">
+                  <ul class="add__member__info">
+                    <li><strong>Elon Reeve Musk</strong></li>
+                    <li>TESLA,SPACE x @CEO</li>
+                  </ul>
+                </label>
               </div>
-              <div class="email">
-                  <p>이메일</p>
-                  <input type="search">
+              <div class="charater__info__right">
+                <input type="checkbox" id="add_option" />
               </div>
-              <div class="modal__member__content">
-                  <div class="charater__info">
-                      <div class="charater__info__left">
-                          <div class="member__avatar">
-                          <img src="../../assets/avatar.png" alt="" />
-                          </div>
-                          <label for="add_option" class="add__member__check">
-                          <ul class="add__member__info">
-                              <li><strong>Elon Reeve Musk</strong></li>
-                              <li>TESLA,SPACE x @CEO</li>
-                          </ul>
-                          </label>
-                      </div>
-                      <div class="charater__info__right">
-                        <input type="checkbox" id="add_option">
-                      </div>
-                  </div>
-                  <div class="charater__info">
-                      <div class="charater__info__left">
-                          <div class="member__avatar">
-                          <img src="../../assets/avatar.png" alt="" />
-                          </div>
-                          <label for="add_option" class="add__member__check">
-                          <ul class="add__member__info">
-                              <li><strong>Elon Reeve Musk</strong></li>
-                              <li>TESLA,SPACE x @CEO</li>
-                          </ul>
-                          </label>
-                      </div>
-                      <div class="charater__info__right">
-                        <input type="checkbox" id="add_option">
-                      </div>
-                  </div>
-
-                  <div class="charater__info">
-                      <div class="charater__info__left">
-                          <div class="member__avatar">
-                          <img src="../../assets/avatar.png" alt="" />
-                          </div>
-                          <label for="add_option" class="add__member__check">
-                          <ul class="add__member__info">
-                              <li><strong>Elon Reeve Musk</strong></li>
-                              <li>TESLA,SPACE x @CEO</li>
-                          </ul>
-                          </label>
-                      </div>
-                      <div class="charater__info__right">
-                        <input type="checkbox" id="add_option">
-                      </div>
-                  </div>
-
-                  <div class="charater__info">
-                      <div class="charater__info__left">
-                          <div class="member__avatar">
-                          <img src="../../assets/avatar.png" alt="" />
-                          </div>
-                          <label for="add_option" class="add__member__check">
-                          <ul class="add__member__info">
-                              <li><strong>Elon Reeve Musk</strong></li>
-                              <li>TESLA,SPACE x @CEO</li>
-                          </ul>
-                          </label>
-                      </div>
-                      <div class="charater__info__right">
-                        <input type="checkbox" id="add_option">
-                      </div>
-                  </div>
-
-                  <div class="charater__info">
-                      <div class="charater__info__left">
-                          <div class="member__avatar">
-                          <img src="../../assets/avatar.png" alt="" />
-                          </div>
-                          <label for="add_option" class="add__member__check">
-                          <ul class="add__member__info">
-                              <li><strong>Elon Reeve Musk</strong></li>
-                              <li>TESLA,SPACE x @CEO</li>
-                          </ul>
-                          </label>
-                      </div>
-                      <div class="charater__info__right">
-                        <input type="checkbox" id="add_option">
-                      </div>
-                  </div>
-
-
-
-
+            </div>
+            <div class="charater__info">
+              <div class="charater__info__left">
+                <div class="member__avatar">
+                  <img src="../../assets/avatar.png" alt="" />
+                </div>
+                <label for="add_option" class="add__member__check">
+                  <ul class="add__member__info">
+                    <li><strong>Elon Reeve Musk</strong></li>
+                    <li>TESLA,SPACE x @CEO</li>
+                  </ul>
+                </label>
               </div>
-              <div class="position">
-                  <p>직책</p>
-                  <input type="search">
+              <div class="charater__info__right">
+                <input type="checkbox" id="add_option" />
               </div>
-              <div class="button__box">
-                  <button type="button" class="btn modal__close">close</button>
-                  <button type="submit" class="btn btn-blue">추가</button>
+            </div>
+
+            <div class="charater__info">
+              <div class="charater__info__left">
+                <div class="member__avatar">
+                  <img src="../../assets/avatar.png" alt="" />
+                </div>
+                <label for="add_option" class="add__member__check">
+                  <ul class="add__member__info">
+                    <li><strong>Elon Reeve Musk</strong></li>
+                    <li>TESLA,SPACE x @CEO</li>
+                  </ul>
+                </label>
               </div>
-          </form>
+              <div class="charater__info__right">
+                <input type="checkbox" id="add_option" />
+              </div>
+            </div>
+
+            <div class="charater__info">
+              <div class="charater__info__left">
+                <div class="member__avatar">
+                  <img src="../../assets/avatar.png" alt="" />
+                </div>
+                <label for="add_option" class="add__member__check">
+                  <ul class="add__member__info">
+                    <li><strong>Elon Reeve Musk</strong></li>
+                    <li>TESLA,SPACE x @CEO</li>
+                  </ul>
+                </label>
+              </div>
+              <div class="charater__info__right">
+                <input type="checkbox" id="add_option" />
+              </div>
+            </div>
+
+            <div class="charater__info">
+              <div class="charater__info__left">
+                <div class="member__avatar">
+                  <img src="../../assets/avatar.png" alt="" />
+                </div>
+                <label for="add_option" class="add__member__check">
+                  <ul class="add__member__info">
+                    <li><strong>Elon Reeve Musk</strong></li>
+                    <li>TESLA,SPACE x @CEO</li>
+                  </ul>
+                </label>
+              </div>
+              <div class="charater__info__right">
+                <input type="checkbox" id="add_option" />
+              </div>
+            </div>
+          </div>
+          <div class="position">
+            <p>직책</p>
+            <input type="search" />
+          </div>
+          <div class="button__box">
+            <button type="button" class="btn modal__close">close</button>
+            <button type="submit" class="btn btn-blue">추가</button>
+          </div>
+        </form>
       </div>
-  </div>
-  <!-- 구성원 추가 모달 -->
+    </div>
+    <!-- 구성원 추가 모달 -->
 
-  <!-- <script>
+    <!-- <script>
 
           // const openButton = document.getElementsByClassName("modal__button");
           // const modal = document.querySelector(".modal");
@@ -337,26 +363,24 @@
           .querySelector(".modal")
           .classList.remove("hidden");
   </script> -->
-  <script>
-      window.onload = function() {
-      
-      function onClick() {
+    <script>
+      window.onload = function () {
+        function onClick() {
           const modal = document.querySelector(".modal");
           modal.classList.remove("hidden");
-      }   
-      function offClick() {
+        }
+        function offClick() {
           const modal = document.querySelector(".modal");
           modal.classList.add("hidden");
-      }
+        }
 
-      document.getElementById('add__member__open').addEventListener('click', onClick);
-      document.querySelector('.modal__close').addEventListener('click', offClick);
-
+        document
+          .getElementById("add__member__open")
+          .addEventListener("click", onClick);
+        document
+          .querySelector(".modal__close")
+          .addEventListener("click", offClick);
       };
-
-
     </script>
-
-      
-</body>
+  </body>
 </html>
