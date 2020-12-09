@@ -1,6 +1,9 @@
 .visual__section{
     margin-top:60px;
 }
+.visual__section .inner button{
+  margin-top: 100px;
+}
 .content__wrapper {
   width: 100%;
   padding: 25px 30px;
