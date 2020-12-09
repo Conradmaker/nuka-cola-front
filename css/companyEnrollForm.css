@@ -1,0 +1,254 @@
+
+  .btn__attachment{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #30409f;
+    outline: none;
+    background: #30409f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 5px 10px 5px 24px;
+    font-size: 13px;
+  }
+  .btn {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #30409f;
+    outline: none;
+    background: #30409f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+    margin-top:30px;
+
+  }
+  .btn:hover {
+    background: #e5e5e5;
+    color: #30409f;
+  }
+
+  .content__section {
+    padding-top: 35px;
+    background: #f7fbff;
+    height: 2300px;
+  }
+  .content__section .inner {
+  }
+  .content__section .section__title {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 35px;
+    margin-top:30px;
+  }
+  .section__title span{
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+  .content__wrapper {
+    width: 100%;
+    padding: 25px 30px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  .main__main__section {
+    display: flex;
+    gap: 20px;
+  }
+  .main__section__content {
+    flex : 10;
+  }
+  .main__section__aside {
+    flex : 3;
+  }
+  .content__wrapper .section__compLogo{
+    display: flex;
+    flex-direction: row;
+  }
+  .content__wrapper .avatar__company {
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    display: flex;
+    position: static;
+  }
+  
+  .avatar__company img {
+    width: 99%;
+    height: 99%;
+    border: 1px solid #e5e5e5;
+  }
+  
+  .content__wrapper .main__info {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .main__info input[type=text]{
+    width:200px;
+    padding: 4px;
+    border-radius: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.12);
+    outline:none;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  .content__wrapper strong{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .content__wrapper .section__compName{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+  }
+
+  .section__compName input[type=text]{
+    width:700px;
+    margin: 10px 0 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.12);
+    outline:none;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  .section__compName span{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .content__wrapper .section__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60px;
+  }
+  .section__main input[type=text] {
+    width:700px;
+    height:100px;
+    border:1px solid rgba(0, 0, 0, 0.12);
+    border-radius:4px;
+    margin:10px 0 0;
+    outline:none;
+    padding:10px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  
+  input[type=text]:focus{
+    box-shadow:0 0 8px 0 #30409f;
+  }
+
+  .content__wrapper .section__compindus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 40px;
+    margin-top:30px;
+  }
+  .section__compindus input[type=checkbox]{
+    height:18px;
+    width:18px;
+  }
+
+  .content__wrapper .section__techstack{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .section__techstack span{
+    margin-top:15px;
+    font-size:13px;
+  }
+  .section__techstack input[type=text]{
+    width:300px;
+    margin: 10px 0 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.12);
+    outline:none;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  .section__teckstack .section__techstack__btn{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+  }
+  .section__techstack .techstack__btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 16px;
+    background-color: #30409f;
+    color: #fff;
+  }
+
+  .content__wrapper .section__compEmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .section__compEmail input[type=text]{
+    width:300px;
+    margin: 10px 0 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.12);
+    outline:none;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  .content__wrapper .section__compAddress{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .section__compAddress input[type=text]{
+    width:700px;
+    margin: 10px 0 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.12);
+    outline:none;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+
+ 
+
+
+  .content__wrapper .aside__toggle{
+    margin:10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .fa-toggle-on, .fa-toggle-off{
+    color:#30409f;
+  }
+  .content__wrapper .aside__toggle-name{
+    color: #212121;
+    margin: 1px 0 0 24px;
+    font-size: 12px;
+  }
+
+  
+
+  
+
+
+  
+ 
