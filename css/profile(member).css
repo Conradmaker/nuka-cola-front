@@ -1,0 +1,135 @@
+.visual__section{
+    margin-top:60px;
+}
+.visual__section .inner button{
+  margin-top: 100px;
+}
+.content__wrapper {
+  width: 100%;
+  padding: 25px 30px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.main__section__left {
+    flex: 2;
+    position: relative;
+    height: 100%;
+}
+ 
+  .main__section__left .content__wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main__section__left .content__wrapper li {
+    list-style: none;
+    margin: 5px;
+  }
+  
+  .content__wrapper .left__info {
+    gap: 20px;
+    font-size: 14px;
+    color: #000;
+  }
+  .content__wrapper .left__info li {
+    height: 30px;
+    padding: 10px;
+    margin-left: 2px;
+    transition: all 0.3s;
+  }
+  .content__wrapper .left__info li:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+  }
+  .left__info a{
+      text-decoration: none;
+      color: #000;
+  }
+  .content__wrapper strong {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .main__section__left .content__wrapper {
+    border-left: 15px solid #575db4;
+
+  }
+
+.main__section__right .content__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+ .main_character{
+     display: flex;
+     justify-content: center;
+     gap:60px;
+ }
+ .main_character .main_character__left, .main_character .main_character__right{
+    flex:1; 
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+ }
+ .main_character__left h2,.main_character__right h2,  .member h2{
+     color:#000;
+     font-size: 16px;
+     font-weight: bold;
+     margin-bottom: 10px;
+ }
+ .charater__info{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap:20px;
+ }
+
+ .member__info{
+    display: flex;
+    flex-direction: column;
+     gap:10px;
+     color:#707070;
+ }
+ .member__info strong{
+     font-size: 18px;
+    color:#000;
+    
+ }
+.member__avatar{
+    border-radius: 100%;
+    border: solid 1px #e5e5e5;
+     width:60px;
+     height:60px;
+ }
+ .member__avatar img{
+    border-radius: 100%;
+     width:100%;
+     height:100%;
+ }
+ .member{
+    display:flex;
+    flex-direction: column;
+ }
+
+ .member .box{
+     padding:10px 0px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-content: flex-start;
+ }
+ .box .charater__info{
+     flex-basis: 340px;
+     margin-bottom: 10px;
+ }
+ .member_btn{
+     margin: 5px;
+     display: flex;
+     justify-content: center;
+ }

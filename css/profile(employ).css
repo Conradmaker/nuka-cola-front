@@ -1,0 +1,111 @@
+.visual__section{
+    margin-top:60px;
+}
+.visual__section .inner button{
+  margin-top: 100px;
+}
+.content__wrapper {
+  width: 100%;
+  padding: 25px 30px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.main__section__left {
+    flex: 2;
+    position: relative;
+    height: 100%;
+}
+ 
+  .main__section__left .content__wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main__section__left .content__wrapper li {
+    list-style: none;
+    margin: 5px;
+  }
+  
+  .content__wrapper .left__info {
+    gap: 20px;
+    font-size: 14px;
+    color: #000;
+  }
+  .content__wrapper .left__info li {
+    height: 30px;
+    padding: 10px;
+    margin-left: 2px;
+    transition: all 0.3s;
+  }
+  .content__wrapper .left__info li:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+  }
+  .left__info a{
+      text-decoration: none;
+      color: #000;
+  }
+  .content__wrapper strong {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .main__section__left .content__wrapper {
+    border-left: 15px solid #575db4;
+
+  }
+ .main__section__right{
+     display: flex;
+     flex-direction: column;
+ }
+  .main__section__right .employ__box__ing{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .main__section__right .employ__box__end{
+    border-top:1px #707070 solid;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .employ__box__ing h2, .employ__box__end h2{
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .employ__box__ing .content__wrapper, .employ__box__end .content__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+  }
+  .content__wrapper .employ__box__info{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+  }
+  .employ__box__info li{
+      font-size: 16px;
+      color: #000;
+  }
+
+  .content__wrapper .tag__box{
+
+  }
+  .tag__box .tag{
+    padding: 2px 15px 5px;
+    height: 30px;
+    border-radius: 16px;
+    background-color: #30409f;
+    color: #fff;
+  }
+  .employ__box__ing .member_btn, .employ__box__end .member_btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }

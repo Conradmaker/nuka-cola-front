@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/profile(script-company).css" />
+    <link rel=”stylesheet” href=”icono.min.css”>
+    <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <div class="inner">
+          <div class="left__header">
+            <div class="logo">
+              <img src="../../assets/logo.png" alt="logo" />
+            </div>
+            <ul class="header__nav">
+              <li class="header__nav-item">PARTNER</li>
+              <li class="header__nav-item">COMPANY</li>
+              <li class="header__nav-item">EMPLOYMENT</li>
+            </ul>
+          </div>
+          <div class="right__header">
+            <i class="icono-hamburger"></i>
+            <span>MENU</span>
+          </div>
+        </div>
+    </header>
+      <section class="visual__section">
+        <div class="inner">
+          <div class="visual__left">
+            <div class="avatar">
+                <img src= "../../assets/profile.png" alt="logo">
+            </div>
+            <div>
+              <div class="main__info">
+                <strong>방글이</strong>
+                <span>Apple.Inc</span>
+                <span>Front-end Amazone AWS, github에 관심</span>
+              </div>
+              <ul class="people__info">
+                <li>팔로잉 <strong>102</strong></li>
+                <li>팔로워 <strong>502</strong></li>
+                <li>연결 <strong>102</strong></li>
+              </ul>
+            </div>
+          </div>
+          <button id="popup_open_btn" class="btn visual__right">지원이력</button>
+        </div>
+      </section>
+
+      <main class="content__section">
+          <div class="inner">
+              <div class="section__title">
+                  <ul>
+                      <li>PROFILE</li>
+                      <li>POST</li>
+                      <li class="nav-active">LIKE</li>
+                  </ul>
+              </div>
+              
+              <div class="main__main__section">
+                <div class="main__section__left">
+                    <div class="content__wrapper">
+                      <ul class="left__info">
+                        <li>TOP</li>
+                        <li>팔로잉</li>
+                        <li>팔로워</li>
+                        <li>북마크</li>
+                        <li>구독기업</li>
+                        <li>좋아요게시물</li>
+                        <li>연결</li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="main__section__right">
+                    
+                    
+                  <div class="content__wrapper">
+                    <div class="section__content__title">
+                        <strong>구독기업</strong>
+                      </div><br>
+                          <span class="following__much">&nbsp;
+                            <strong>102</strong> 명을 팔로잉
+                          </span>
+                    <br><br>
+                          <div class="script__company__box">
+                            <div class="company__box__left">
+                                <div class="company__img__box">
+                                <img src="../../assets/loginImage.jpg" alt="">
+                                </div>
+                                <ul>
+                                    <li class="company__info__title">RIDIBOOKS<span>1003명의 구성원 &nbsp;&nbsp; Sinece 2017</span> </li>
+                                    <li>dafsdfadfsadfadfadfasdfadfasfsdfsafadsfadfasfdsfafd</li>
+                                    <li>dfadfadfasfsdfadsfasfsdfsadfasdfadsfsdf</li>
+                                </ul>
+                            </div>
+                            <div class="company__box__right">
+                                <span>삭제</span>
+                            </div>
+
+                          </div>
+                   
+                    
+                    
+                    
+
+
+
+                   </div>
+                </div>
+              </div>
+            </div>
+
+
+            <a id="topBtn" href="#"><img id="logoDesign"src="../../assets/avatar.png" alt=""></a>
+
+            <script>
+
+            $(function() { 
+              $(window).scroll(function() { 
+                if ($(this).scrollTop() > 1000) { 
+                  $('#topBtn').fadeIn(); } 
+                  else { $('#topBtn').fadeOut(); } }); 
+
+              $("#topBtn").click(function() { 
+                $('html, body').animate({ 
+                  scrollTop : 0 
+               }, 400); 
+              return false; }); });
+
+
+
+
+
+            </script>
+
+            <div id="my_modal">
+              지원이력 페이지로 가시겠습니까?
+              <a class="modal_close_btn"><i class="icono-crossCircle"></i></a> 
+            </div>
+
+
+
+
+          <!-- 모달창 자바스크립트 -->
+          <script>
+            function modal(id) {
+                var zIndex = 9999;
+                var modal = document.getElementById(id);
+
+                // 모달 div 뒤에 희끄무레한 레이어
+                var bg = document.createElement('div');
+                bg.setStyle({
+                    position: 'fixed',
+                    zIndex: zIndex,
+                    left: '0px',
+                    top: '0px',
+                    width: '100%',
+                    height: '100%',
+                    overflow: 'auto',
+                    // 레이어 색갈은 여기서 바꾸면 됨
+                    backgroundColor: 'rgba(0,0,0,0.4)'
+                });
+                document.body.append(bg);
+
+                // 링크가기, 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
+                modal.querySelector('.modal_close_btn').addEventListener('click', function() {
+                    bg.remove();
+                    modal.style.display = 'none';
+                });
+               
+
+                modal.setStyle({
+                    position: 'fixed',
+                    display: 'block',
+                    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+                    
+                    // 시꺼먼 레이어 보다 한칸 위에 보이기
+                    zIndex: zIndex + 1,
+                    
+                    // div 정렬
+                    top: '20%',
+                    left: '70%',
+                    transform: 'translate(-50%, -50%)',
+                    msTransform: 'translate(-50%, -50%)',
+                    webkitTransform: 'translate(-50%, -50%)'
+                });
+            }
+
+            // Element 에 style 한번에 오브젝트로 설정하는 함수 추가
+            Element.prototype.setStyle = function(styles) {
+                for (var k in styles) this.style[k] = styles[k];
+                return this;
+            };
+
+            document.getElementById('popup_open_btn').addEventListener('click', function() {
+                // 모달창 띄우기
+                modal('my_modal');
+            });
+        </script>
+
+
+
+
+          </main>
+</body>
+</html>

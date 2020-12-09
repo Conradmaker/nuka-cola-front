@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 자바스크립트 -->
+    <link rel="stylesheet" href="../../css/common.css" />
+   <style>
+  /* 모달 style */
+
+    .modal{
+        position:fixed;
+        top:0;
+        left: 0;
+        width:100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .modal__overlay{
+        background-color: rgba(0,0,0,0.6);
+        width:100%;
+        height: 100%;
+    }
+    .modal__content{
+        width:400px;
+        height:500px;
+        background-color: #fff;
+        /* border-radius: 10px; */
+        position: fixed;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        display: flex;
+        justify-content: center;
+    }
+    .modal__content .content__inner{
+        padding: 20px;
+        height: 100%;
+        width:380px;
+    }
+    .modal__title h2{
+        margin: 5px 0px;
+        font-weight: bold;
+        font-size: 20px;
+        color: #000;
+    }
+    .modal__member__content{
+        /* border:red 1px solid; */
+        height:300px;
+        overflow: auto;
+
+    }
+    .email p, .position p{
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+    .content__inner .email{
+    margin-top: 15px;
+    }
+    .email input, .position input{
+        width:100%;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid #000;
+        outline: none;
+        transition: all 0.2s;
+    }
+    .email input:focus, .position input:focus{
+        border-bottom: 2px solid #000;
+        width:80%;
+    }
+    .email input::-webkit-search-decoration,
+    .email input::-webkit-search-cancel-button {
+        display: none;
+    }
+    .member__avatar{
+    border-radius: 100%;
+    border: solid 1px #e5e5e5;
+     width:60px;
+     height:60px;
+    }
+    .member__avatar img{
+        border-radius: 100%;
+        width:100%;
+        height:100%;
+    }
+    .modal__member__content .charater__info{
+        height:100px;
+        margin:0;
+        padding:0px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .charater__info .charater__info__left{
+        display: flex;
+        align-items: center;
+    }
+    .charater__info .charater__info__right{
+    }
+    .add__member__check{
+        display: flex;
+        align-items: center;
+    }
+    .add__member__info{
+        flex:5;
+        display: flex;
+        flex-direction: column;
+        margin-left:10px;
+        padding:0;
+        gap:7px;
+        list-style: none;
+    }
+    .add__member__check input{
+        flex:1;
+    }
+    .button__box{
+        margin-top:10px;
+        display: flex;
+        justify-content: center;
+        gap:30px;
+    }
+    .hidden{
+        display: none;
+    }
+  </style>
+</head>
+<body>
+    <!-- id추가 해주세요 -->
+    <!-- <button class="btn visual__right" id="add__member__open">구성원추가</button> -->
+    
+    <!-- 구성원 추가 모달 -->
+    <div class="modal hidden">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <form class="content__inner">
+                <div class="modal__title">
+                    <h2>구성원 추가</h2>
+                </div>
+                <div class="email">
+                    <p>이메일</p>
+                    <input type="search">
+                </div>
+                <div class="modal__member__content">
+                    <div class="charater__info">
+                        <div class="charater__info__left">
+                            <div class="member__avatar">
+                            <img src="../../assets/avatar.png" alt="" />
+                            </div>
+                            <label for="add_option" class="add__member__check">
+                            <ul class="add__member__info">
+                                <li><strong>Elon Reeve Musk</strong></li>
+                                <li>TESLA,SPACE x @CEO</li>
+                            </ul>
+                            </label>
+                        </div>
+                        <div class="charater__info__right">
+                          <input type="checkbox" id="add_option">
+                        </div>
+                    </div>
+                    <div class="charater__info">
+                        <div class="charater__info__left">
+                            <div class="member__avatar">
+                            <img src="../../assets/avatar.png" alt="" />
+                            </div>
+                            <label for="add_option" class="add__member__check">
+                            <ul class="add__member__info">
+                                <li><strong>Elon Reeve Musk</strong></li>
+                                <li>TESLA,SPACE x @CEO</li>
+                            </ul>
+                            </label>
+                        </div>
+                        <div class="charater__info__right">
+                          <input type="checkbox" id="add_option">
+                        </div>
+                    </div>
+
+                    <div class="charater__info">
+                        <div class="charater__info__left">
+                            <div class="member__avatar">
+                            <img src="../../assets/avatar.png" alt="" />
+                            </div>
+                            <label for="add_option" class="add__member__check">
+                            <ul class="add__member__info">
+                                <li><strong>Elon Reeve Musk</strong></li>
+                                <li>TESLA,SPACE x @CEO</li>
+                            </ul>
+                            </label>
+                        </div>
+                        <div class="charater__info__right">
+                          <input type="checkbox" id="add_option">
+                        </div>
+                    </div>
+
+                    <div class="charater__info">
+                        <div class="charater__info__left">
+                            <div class="member__avatar">
+                            <img src="../../assets/avatar.png" alt="" />
+                            </div>
+                            <label for="add_option" class="add__member__check">
+                            <ul class="add__member__info">
+                                <li><strong>Elon Reeve Musk</strong></li>
+                                <li>TESLA,SPACE x @CEO</li>
+                            </ul>
+                            </label>
+                        </div>
+                        <div class="charater__info__right">
+                          <input type="checkbox" id="add_option">
+                        </div>
+                    </div>
+
+                    <div class="charater__info">
+                        <div class="charater__info__left">
+                            <div class="member__avatar">
+                            <img src="../../assets/avatar.png" alt="" />
+                            </div>
+                            <label for="add_option" class="add__member__check">
+                            <ul class="add__member__info">
+                                <li><strong>Elon Reeve Musk</strong></li>
+                                <li>TESLA,SPACE x @CEO</li>
+                            </ul>
+                            </label>
+                        </div>
+                        <div class="charater__info__right">
+                          <input type="checkbox" id="add_option">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="position">
+                    <p>직책</p>
+                    <input type="search">
+                </div>
+                <div class="button__box">
+                    <button type="button" class="btn modal__close">close</button>
+                    <button type="submit" class="btn btn-blue">추가</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 구성원 추가 모달 -->
+
+    <!-- <script>
+
+            // const openButton = document.getElementsByClassName("modal__button");
+            // const modal = document.querySelector(".modal");
+            // const openModal =() =>{
+            //     modal.classList.remove("hidden");
+            // }
+            // openButton.addEventListener("click", openModal);
+            document.querySelector(".modal__button").addEventListener("click", () => {
+            document
+            .querySelector(".modal")
+            .classList.remove("hidden");
+    </script> -->
+    <script>
+        window.onload = function() {
+        
+        function onClick() {
+            const modal = document.querySelector(".modal");
+            modal.classList.remove("hidden");
+        }   
+        function offClick() {
+            const modal = document.querySelector(".modal");
+            modal.classList.add("hidden");
+        }
+  
+        document.getElementById('add__member__open').addEventListener('click', onClick);
+        document.querySelector('.modal__close').addEventListener('click', offClick);
+  
+        };
+  
+  
+      </script>
+      
+</body>
+</html>
