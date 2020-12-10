@@ -14,8 +14,8 @@
     href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="../../css/common.css" />
-  <link rel="stylesheet" href="../../css/recruit/recruit-detail.css" />
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/recruit/recruit-detail.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../css/common.css">
 </head>
@@ -154,7 +154,7 @@
               <button type="button">지원자 보기 (0)</button>
               <button type="button">북마크한 사람 (0)</button>
               <button type="button">채용정보 수정</button>
-              <span>채용 정보 신고</span>
+              <span onclick="showRepo()">채용 정보 신고</span>
             </div>
             <div class="item2 recruit__content item2">
               <!--박스 오른쪽 파란띠 부분-->
@@ -227,5 +227,41 @@
       </div>
     </div>
   </footer>
+
+
+  <!--채용신고폼-->
+  
+  <div class="recruit-detail__report-form__background">
+
+    <div class="recruit-detail__report-form">
+      <form action="">
+        <div class="report-form__item1">
+          <strong>채용 정보 신고</strong>
+        </div>
+        <div class="report-form__item2">
+          <textarea name="" cols="30" rows="10" placeholder="사유를 입력해 주세요" required></textarea>
+        </div>
+        <div class="report-form__item3">
+          <button type="submit">신고</button>
+          <button type="button" onclick="hideRepo()">취소</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  
+
+<script>
+  function showRepo(){
+    let repoForm = document.querySelector('.recruit-detail__report-form__background');
+    repoForm.style.display='block';
+  }
+
+  function hideRepo(){
+    let repoForm = document.querySelector('.recruit-detail__report-form__background');
+    console.log(repoForm.style);
+    repoForm.style.display='none';
+  }
+</script>
 </body>
 </html>
