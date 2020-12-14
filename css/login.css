@@ -106,6 +106,14 @@ main .inner .section__banner {
   display: none;
   color: red;
 }
+#alert_check_email {
+  display: none;
+  color: red;
+}
+#alert_dupcheck_email {
+  display: none;
+  color: red;
+}
 .login__btn__wrapper {
   width: 70%;
   display: flex;
@@ -147,7 +155,7 @@ main .inner .section__banner {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background: url("../assets/keyboard_arrow_down-24px.svg") no-repeat 100% 50%; /* 화살표 모양의 이미지 */
+  background: url('../assets/keyboard_arrow_down-24px.svg') no-repeat 100% 50%; /* 화살표 모양의 이미지 */
 }
 .more__info select::-ms-expand {
   display: none;
