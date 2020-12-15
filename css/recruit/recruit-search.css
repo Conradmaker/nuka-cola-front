@@ -54,6 +54,34 @@
   box-shadow: 0px 0px 5px #707070;
   gap: 30px;
 }
+.recruit-search__main-wrapper .info-search .info-search__searchbar {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px;
+  width: 70%;
+  border: solid 1px #c7c7c7;
+  border-radius: 3px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px;
+  box-shadow: 0px 0px 2px #c7c7c7 inset;
+}
+.info-search__searchbar input {
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.info-search__searchbar .material-icons {
+  font-size: 30px;
+  color: #707070;
+}
+.info-search__searchbar .material-icons:hover {
+  cursor: pointer;
+}
 .recruit-search__main-wrapper .info-search .info-search__header {
   display: flex;
   padding: 10px;

@@ -112,7 +112,7 @@ main .inner .section__banner {
 }
 #alert_dupcheck_email {
   display: none;
-  color: red;
+  color: #ff0000;
 }
 .login__btn__wrapper {
   width: 70%;
