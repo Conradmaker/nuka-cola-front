@@ -264,8 +264,9 @@ strong {
 
 #my_modal {
   display: none;
-  width: 300px;
-  padding: 20px 60px;
+  width: 500px;
+  height: 500px;
+  padding: 20px 30px;
   background-color: #fefefe;
   border: 1px solid #888;
   border-radius: 3px;
@@ -285,11 +286,32 @@ strong {
 }
 a#topBtn {
   position: fixed; /* 포지션 고정 */
-  right: 2%; /* 오른쪽에서 2% - %도 할수 있음*/
+  right: 0%; /* 오른쪽에서 2% - %도 할수 있음*/
   bottom: 5px; /* 밑에서 5px */
   display: none; /* 보여지지 없음 - 기본적으로 안보여지게 */
   z-index: 9999; /* 포지션을 먼저 지정후 z-좌표(레이어) : 9999입니다. */
 }
 #logoDesign {
-  transform: scale(1);
+  transform: scale(0.2);
+}
+
+#one-line-input {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#one-line-input textarea {
+  width: 100%;
+  height: 60px;
+  resize: none;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#one-line-input button {
+  width: 100%;
+}
+
+.edit-disable {
+  display: none;
 }
