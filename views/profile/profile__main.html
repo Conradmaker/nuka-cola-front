@@ -80,15 +80,20 @@
         <div class="content__wrapper">
           <div class="section__content__title">
             <strong>한줄 소개</strong>
-            <div class="edit__field">
-              <i class="material-icons">create</i>
+            <div onclick="oneLineToggle()" class="edit__field">
+              <i id="one-line-btn" class="material-icons">create</i>
             </div>
           </div>
-          <span class="just__text">
+          <span class="just__text" id="one-line-info">
             안녕하세요? <br />
             또왔네?
           </span>
+          <div id="one-line-input" class="edit-disable">
+            <textarea></textarea>
+            <button type="button" class="btn">등록</button>
+          </div>
         </div>
+
         <div class="main__main__section">
           <div class="main__section__left">
             <div class="content__wrapper">
@@ -178,89 +183,103 @@
 
             <div class="content__wrapper">
               <div class="section__content__title">
-                <strong>구성원</strong>
+                <strong>인맥</strong>
               </div>
+              
+              <div class="connection__section__wrapper">
 
-              <div class="section__member">
-                <div class="content__profile">
-                  <img
-                    class="circle"
-                    src="../../assets/wonbin.jpeg"
-                    alt="PROFILE"
-                  />
-                  <div class="content__introduce">
-                    <strong>성수지</strong>
-                    <p>프론트엔드 @구글</p>
-                  </div>
-                </div>
-                <div class="content__profile">
-                  <img
-                    class="circle"
-                    src="../../assets/JonahHill.jpg"
-                    alt="PROFILE"
-                  />
-                  <div class="content__introduce">
-                    <strong>배진원</strong>
-                    <p>프론트엔드 @구글</p>
-                  </div>
-                </div>
-                <div class="content__profile">
-                  <img
-                    class="circle"
-                    src="../../assets/wonbin.jpeg"
-                    alt="PROFILE"
-                  />
-                  <div class="content__introduce">
-                    <strong>유원근</strong>
-                    <p>프론트엔드 @구글</p>
-                  </div>
-                </div>
-                <div class="content__profile">
-                  <img
-                    class="circle"
-                    src="../../assets/wonbin.jpeg"
-                    alt="PROFILE"
-                  />
-                  <div class="content__introduce">
-                    <strong>정찬복</strong>
-                    <p>프론트엔드 @구글</p>
-                  </div>
-                </div>
-                <div class="content__profile">
-                  <img
-                    class="circle"
-                    src="../../assets/wonbin.jpeg"
-                    alt="PROFILE"
-                  />
-                  <div class="content__introduce">
-                    <strong>김준호</strong>
-                    <p>프론트엔드 @구글</p>
-                  </div>
-                </div>
-                <div class="content__profile">
-                  <img
-                    class="circle"
-                    src="../../assets/wonbin.jpeg"
-                    alt="PROFILE"
-                  />
-                  <div class="content__introduce">
-                    <strong>손지원</strong>
-                    <p>프론트엔드 @구글</p>
-                  </div>
-                </div>
-              </div>
+                  <div class="section__member section__connection">
+                      <div class="section__header">
+                        <strong>팔로워</strong>
+                      </div>
+
+                      <!--팔로워 리스트-->
+                      <div class="content__profile">
+                          <img
+                            class="circle"
+                            src="../../assets/wonbin.jpeg"
+                            alt="PROFILE"
+                          />
+                          <div class="content__introduce">
+                            <strong>정찬복</strong>
+                            <p>프론트엔드 @구글</p>
+                          </div>
+                      </div><!--content__profile-->
+
+                      <div class="content__profile">
+                        <img
+                          class="circle"
+                          src="../../assets/wonbin.jpeg"
+                          alt="PROFILE"
+                        />
+                        <div class="content__introduce">
+                          <strong>정찬복</strong>
+                          <p>프론트엔드 @구글</p>
+                        </div>
+                    </div><!--content__profile-->
+                    
+                  </div><!--section__member-->
+
+                  <div class="section__member section__connection">
+
+                      <div class="section__header">
+                        <strong>팔로잉</strong>
+                      </div>
+      
+                      <!--팔로잉 리스트-->
+                      <div class="content__profile">
+                          <img
+                            class="circle"
+                            src="../../assets/wonbin.jpeg"
+                            alt="PROFILE"
+                          />
+                          <div class="content__introduce">
+                            <strong>이준호</strong>
+                            <p>프론트엔드 @구글</p>
+                          </div>
+                      </div><!--content__profile-->
+
+                      
+                  
+                  </div><!--section__member-->
+    
+                  <div class="section__member section__connection">
+    
+                      <div class="section__header">
+                        <strong>연결</strong>
+                      </div>
+
+                      <!--연결 리스트(자료구조 아님!)-->
+                      <div class="content__profile">
+                          <img
+                            class="circle"
+                            src="../../assets/wonbin.jpeg"
+                            alt="PROFILE"
+                          />
+                          <div class="content__introduce">
+                            <strong>이준호</strong>
+                            <p>프론트엔드 @구글</p>
+                          </div>
+                      </div><!--content__profile-->
+                  
+                  </div><!--section__member-->
+
+
+              </div><!--section__wrapper-->
+              
+
 
               <div class="section__more-member">
                 <button class="btn visual__right">MORE</button>
               </div>
-            </div>
+            </div><!--content__wrapper-->
           </div>
         </div>
       </div>
 
-      <a id="topBtn" href="#"
+      <!-- <a id="topBtn" href="#"
         ><img id="logoDesign" src="../../assets/avatar.png" alt=""
-      /></a>
+      /></a> -->
 
       <script>
         $(function () {
@@ -352,3 +371,36 @@
     </main>
   </body>
 </html>
+
+<script>
+  // //왠만해서는 쓰지말자 함수선언식
+  // function a(a, b) {
+  //   return a + b;
+  // }
+  // //함수표현식
+  // const b = function (a, b) {
+  //   return a + b;
+  // };
+  // const c = {
+  //   a() {
+  //     return this;
+  //   },
+  //   b() {
+  //     return 1;
+  //   },
+  // };
+
+  // //화살표함수
+  // const d = (a, b) => a + b;
+
+  const oneLineToggle = () => {
+    document.querySelector("#one-line-info").classList.toggle("edit-disable");
+    document.querySelector("#one-line-input").classList.toggle("edit-disable");
+
+    if (document.querySelector("#one-line-btn").innerText === "create") {
+      document.querySelector("#one-line-btn").innerText = "close";
+    } else {
+      document.querySelector("#one-line-btn").innerText = "create";
+    }
+  };
+</script>

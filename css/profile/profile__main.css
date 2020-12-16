@@ -191,8 +191,8 @@
   font-weight: bold;
 }
 .content__wrapper .content__profile {
-  position: relative;
-  top: 10px;
+  /* position: relative; */
+  /* top: 10px; */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -206,6 +206,7 @@
 }
 .content__wrapper .section__more-member {
   position: relative;
+  margin-top: 30px;
   left: 300px;
 }
 .content__wrapper .just__text {
@@ -250,16 +251,16 @@ strong {
   padding: 10px;
   margin-left: 30px;
 }
-.section__member .content__profile + .content__profile {
+/* .section__member .content__profile + .content__profile {
   border-left: 1px solid #e7e7e7;
-}
+} */
 .content__wrapper .section__member {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-end;
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 
 #my_modal {
@@ -292,4 +293,52 @@ a#topBtn {
 }
 #logoDesign {
   transform: scale(1);
+}
+#one-line-input {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#one-line-input textarea {
+  width: 100%;
+  height: 60px;
+  resize: none;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#one-line-input button {
+  width: 100%;
+}
+.edit-disable {
+  display: none;
+}
+
+/*-------연결부분 css 수정-------*/
+.content__wrapper .connection__section__wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.connection__section__wrapper .section__connection {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+}
+
+.section__connection + .section__connection {
+  border-left: 1px solid #c7c7c7;
+}
+
+.connection__section__wrapper .section__header {
+  width: 100%;
+  text-align: center;
+}
+
+.section__connection .content__profile {
+  display: flex;
+  justify-content: flex-start;
 }
