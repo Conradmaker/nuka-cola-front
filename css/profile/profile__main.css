@@ -182,10 +182,10 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #00d3d3;
+  /* background: #00d3d3; */
   font-size: 12px;
   text-align: center;
-  line-height: 200px;
+  /* line-height: 200px; */
   border: 1px solid rgb(248, 254, 255);
   box-shadow: 0 0 4px rgb(221, 221, 221);
   font-weight: bold;
@@ -341,4 +341,8 @@ a#topBtn {
 .section__connection .content__profile {
   display: flex;
   justify-content: flex-start;
+}
+
+.content__section {
+  height: 100%;
 }
