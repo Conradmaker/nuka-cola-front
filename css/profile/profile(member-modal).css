@@ -102,6 +102,7 @@ border: solid 1px #e5e5e5;
     gap:7px;
     list-style: none;
 }
+
 .add__member__check input{
     flex:1;
 }

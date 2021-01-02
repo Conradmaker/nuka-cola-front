@@ -181,6 +181,8 @@
         </div>
       </div>
     </main>
+
+
     <!-- 구성원 추가 모달 -->
     <div class="modal hidden">
       <div class="modal__overlay"></div>
@@ -191,7 +193,7 @@
               </div>
               <div class="email">
                   <p>이메일</p>
-                  <input type="search">
+                  <input type="search" id="find-email">
               </div>
               <div class="modal__member__content">
                  <!-- 기업의 구성원 for문 -->
@@ -313,5 +315,12 @@
     </script>
 
   <!-- 구성원 추가 모달 -->
+
+  <script defer>
+    //구성원으로 추가할 일반회원 검색할 때 검색키워드에 맞는 구성원 리스트를 보여준다.
+    document.querySelector('#find-email').addEventListener('input',(e)=>{
+      document.querySelector('.modal__member__content').innerHTML='<p>검색 결과가 없습니다</p>';
+    })
+  </script>
   </body>
 </html>
